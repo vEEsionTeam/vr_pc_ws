@@ -1,4 +1,0 @@
-Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zulal/gazebo_ws/src/vr_sim -DCMAKE_INSTALL_PREFIX=/home/zulal/gazebo_ws/install/vr_sim
-Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zulal/gazebo_ws/src/vr_sim -DCMAKE_INSTALL_PREFIX=/home/zulal/gazebo_ws/install/vr_sim
-Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
-Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12

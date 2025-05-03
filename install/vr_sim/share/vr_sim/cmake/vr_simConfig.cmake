@@ -1,1 +1,0 @@
-/home/zulal/gazebo_ws/build/vr_sim/ament_cmake_core/vr_simConfig.cmake

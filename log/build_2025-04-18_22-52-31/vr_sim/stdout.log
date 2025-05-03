@@ -1,4 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/sphere_mover.dir/src/sphere_mover_node.cpp.o[0m
-[ 50%] Built target robot_movement
-[ 83%] Built target robot_tf_publisher
-[100%] [32m[1mLinking CXX executable sphere_mover[0m

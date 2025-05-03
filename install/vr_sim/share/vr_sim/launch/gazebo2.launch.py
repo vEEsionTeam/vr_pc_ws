@@ -1,1 +1,0 @@
-/home/zulal/gazebo_ws/src/vr_sim/launch/gazebo2.launch.py
