@@ -1,0 +1,24 @@
+[1.369s] Invoking command in '/home/zulal/gazebo_ws/src/vr_camera': PYTHONPATH=/home/zulal/gazebo_ws/build/vr_camera/prefix_override:/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vr_camera build --build-base /home/zulal/gazebo_ws/build/vr_camera/build install --record /home/zulal/gazebo_ws/build/vr_camera/install.log --single-version-externally-managed
+[1.713s] running egg_info
+[1.714s] writing ../../build/vr_camera/vr_camera.egg-info/PKG-INFO
+[1.714s] writing dependency_links to ../../build/vr_camera/vr_camera.egg-info/dependency_links.txt
+[1.714s] writing entry points to ../../build/vr_camera/vr_camera.egg-info/entry_points.txt
+[1.715s] writing requirements to ../../build/vr_camera/vr_camera.egg-info/requires.txt
+[1.715s] writing top-level names to ../../build/vr_camera/vr_camera.egg-info/top_level.txt
+[1.717s] reading manifest file '../../build/vr_camera/vr_camera.egg-info/SOURCES.txt'
+[1.719s] writing manifest file '../../build/vr_camera/vr_camera.egg-info/SOURCES.txt'
+[1.720s] running build
+[1.720s] running build_py
+[1.720s] copying vr_camera/vr_node.py -> /home/zulal/gazebo_ws/build/vr_camera/build/lib/vr_camera
+[1.720s] running install
+[1.721s] running install_lib
+[1.722s] copying /home/zulal/gazebo_ws/build/vr_camera/build/lib/vr_camera/vr_node.py -> /home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages/vr_camera
+[1.723s] byte-compiling /home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages/vr_camera/vr_node.py to vr_node.cpython-310.pyc
+[1.723s] running install_data
+[1.724s] running install_egg_info
+[1.726s] removing '/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages/vr_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[1.727s] Copying ../../build/vr_camera/vr_camera.egg-info to /home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages/vr_camera-0.0.0-py3.10.egg-info
+[1.728s] running install_scripts
+[1.762s] Installing vr_node script to /home/zulal/gazebo_ws/install/vr_camera/lib/vr_camera
+[1.763s] writing list of installed files to '/home/zulal/gazebo_ws/build/vr_camera/install.log'
+[1.864s] Invoked command in '/home/zulal/gazebo_ws/src/vr_camera' returned '0': PYTHONPATH=/home/zulal/gazebo_ws/build/vr_camera/prefix_override:/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vr_camera build --build-base /home/zulal/gazebo_ws/build/vr_camera/build install --record /home/zulal/gazebo_ws/build/vr_camera/install.log --single-version-externally-managed

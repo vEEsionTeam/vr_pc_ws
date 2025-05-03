@@ -1,0 +1,446 @@
+[0.000000] (-) TimerEvent: {}
+[0.000533] (-) JobUnselected: {'identifier': 'tf_server'}
+[0.001226] (vr_sim) JobQueued: {'identifier': 'vr_sim', 'dependencies': OrderedDict()}
+[0.002244] (vr_sim) JobStarted: {'identifier': 'vr_sim'}
+[0.101083] (-) TimerEvent: {}
+[0.150497] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'cmake'}
+[0.155995] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'build'}
+[0.156084] (vr_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zulal/gazebo_ws/build/vr_sim', '--', '-j12', '-l12'], 'cwd': '/home/zulal/gazebo_ws/build/vr_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zulal'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zulal/veesion/catkin_ws_ov/install/ov_msckf/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_init/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_eval/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/zulal'), ('OLDPWD', '/home/zulal'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2084'), ('SYSTEMD_EXEC_PID', '2733'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11565'), ('COLCON_PREFIX_PATH', '/home/zulal/gazebo_ws/install:/home/zulal/veesion/catkin_ws_ov/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zulal'), ('JOURNAL_STREAM', '8:16578'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zulal'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models::/home/zulal/gazebo_ws/install/vr_sim/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/zulal/.local/bin:/opt/ros/humble/bin:/home/zulal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zulal-ABRA-A5-V15-8:@/tmp/.ICE-unix/2402,unix/zulal-ABRA-A5-V15-8:/tmp/.ICE-unix/2402'), ('INVOCATION_ID', '32e5a1cfd85f4cef860099dbf9f2d106'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/gazebo_ws/install/tf_server:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/test_imu:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/home/zulal/veesion/catkin_ws_ov/install/artificial_imu:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:40edb0d4-0567-49a3-b469-7fd001f0de5f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zulal/gazebo_ws/build/vr_sim'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/test_imu:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/home/zulal/veesion/catkin_ws_ov/install/artificial_imu:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble')]), 'shell': False}
+[0.205179] (-) TimerEvent: {}
+[0.214009] (vr_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.305267] (-) TimerEvent: {}
+[0.405657] (-) TimerEvent: {}
+[0.438823] (vr_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.449926] (vr_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.505817] (-) TimerEvent: {}
+[0.506299] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.510268] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.521382] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.544301] (vr_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.571100] (vr_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.605955] (-) TimerEvent: {}
+[0.633506] (vr_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.634973] (vr_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.706128] (-) TimerEvent: {}
+[0.760027] (vr_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.806218] (-) TimerEvent: {}
+[0.906534] (-) TimerEvent: {}
+[0.947396] (vr_sim) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.006691] (-) TimerEvent: {}
+[1.089914] (vr_sim) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.106748] (-) TimerEvent: {}
+[1.207136] (-) TimerEvent: {}
+[1.210225] (vr_sim) StdoutLine: {'line': b'-- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.217551] (vr_sim) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.307268] (-) TimerEvent: {}
+[1.407704] (-) TimerEvent: {}
+[1.508003] (-) TimerEvent: {}
+[1.604598] (vr_sim) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.608089] (-) TimerEvent: {}
+[1.609811] (vr_sim) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.611318] (vr_sim) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.623323] (vr_sim) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[1.689921] (vr_sim) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[1.708176] (-) TimerEvent: {}
+[1.808441] (-) TimerEvent: {}
+[1.908788] (-) TimerEvent: {}
+[1.911164] (vr_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.002723] (vr_sim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.002962] (vr_sim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.003074] (vr_sim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.004713] (vr_sim) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.008300] (vr_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.008831] (-) TimerEvent: {}
+[2.010272] (vr_sim) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.025630] (vr_sim) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.025879] (vr_sim) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.027598] (vr_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.028875] (vr_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.046581] (vr_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[2.048220] (vr_sim) StdoutLine: {'line': b'-- Build files have been written to: /home/zulal/gazebo_ws/build/vr_sim\n'}
+[2.074800] (vr_sim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sphere_mover\x1b[0m\n'}
+[2.086093] (vr_sim) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/image_duplicator.dir/src/image_duplicator.cpp.o\x1b[0m\n'}
+[2.095631] (vr_sim) StdoutLine: {'line': b'[ 75%] Built target sphere_mover\n'}
+[2.108959] (-) TimerEvent: {}
+[2.209297] (-) TimerEvent: {}
+[2.309586] (-) TimerEvent: {}
+[2.409868] (-) TimerEvent: {}
+[2.510196] (-) TimerEvent: {}
+[2.610454] (-) TimerEvent: {}
+[2.710717] (-) TimerEvent: {}
+[2.811070] (-) TimerEvent: {}
+[2.911339] (-) TimerEvent: {}
+[3.011606] (-) TimerEvent: {}
+[3.111911] (-) TimerEvent: {}
+[3.212309] (-) TimerEvent: {}
+[3.312892] (-) TimerEvent: {}
+[3.413282] (-) TimerEvent: {}
+[3.513540] (-) TimerEvent: {}
+[3.613779] (-) TimerEvent: {}
+[3.714081] (-) TimerEvent: {}
+[3.814411] (-) TimerEvent: {}
+[3.914752] (-) TimerEvent: {}
+[4.015171] (-) TimerEvent: {}
+[4.115663] (-) TimerEvent: {}
+[4.215997] (-) TimerEvent: {}
+[4.316399] (-) TimerEvent: {}
+[4.416733] (-) TimerEvent: {}
+[4.517167] (-) TimerEvent: {}
+[4.617892] (-) TimerEvent: {}
+[4.718628] (-) TimerEvent: {}
+[4.818938] (-) TimerEvent: {}
+[4.919265] (-) TimerEvent: {}
+[5.019523] (-) TimerEvent: {}
+[5.119829] (-) TimerEvent: {}
+[5.220167] (-) TimerEvent: {}
+[5.320505] (-) TimerEvent: {}
+[5.420802] (-) TimerEvent: {}
+[5.524814] (-) TimerEvent: {}
+[5.625262] (-) TimerEvent: {}
+[5.725744] (-) TimerEvent: {}
+[5.826115] (-) TimerEvent: {}
+[5.926502] (-) TimerEvent: {}
+[6.026831] (-) TimerEvent: {}
+[6.127147] (-) TimerEvent: {}
+[6.227743] (-) TimerEvent: {}
+[6.328026] (-) TimerEvent: {}
+[6.428319] (-) TimerEvent: {}
+[6.528686] (-) TimerEvent: {}
+[6.629316] (-) TimerEvent: {}
+[6.729782] (-) TimerEvent: {}
+[6.830335] (-) TimerEvent: {}
+[6.931035] (-) TimerEvent: {}
+[7.031496] (-) TimerEvent: {}
+[7.132166] (-) TimerEvent: {}
+[7.232636] (-) TimerEvent: {}
+[7.333019] (-) TimerEvent: {}
+[7.433377] (-) TimerEvent: {}
+[7.533887] (-) TimerEvent: {}
+[7.634411] (-) TimerEvent: {}
+[7.735235] (-) TimerEvent: {}
+[7.835507] (-) TimerEvent: {}
+[7.935847] (-) TimerEvent: {}
+[8.036237] (-) TimerEvent: {}
+[8.136524] (-) TimerEvent: {}
+[8.237014] (-) TimerEvent: {}
+[8.337563] (-) TimerEvent: {}
+[8.438071] (-) TimerEvent: {}
+[8.538363] (-) TimerEvent: {}
+[8.638687] (-) TimerEvent: {}
+[8.739040] (-) TimerEvent: {}
+[8.839414] (-) TimerEvent: {}
+[8.939735] (-) TimerEvent: {}
+[9.040078] (-) TimerEvent: {}
+[9.140424] (-) TimerEvent: {}
+[9.240839] (-) TimerEvent: {}
+[9.341382] (-) TimerEvent: {}
+[9.441803] (-) TimerEvent: {}
+[9.542190] (-) TimerEvent: {}
+[9.642560] (-) TimerEvent: {}
+[9.742879] (-) TimerEvent: {}
+[9.843216] (-) TimerEvent: {}
+[9.943520] (-) TimerEvent: {}
+[10.043847] (-) TimerEvent: {}
+[10.144066] (-) TimerEvent: {}
+[10.244349] (-) TimerEvent: {}
+[10.344641] (-) TimerEvent: {}
+[10.444906] (-) TimerEvent: {}
+[10.545183] (-) TimerEvent: {}
+[10.645450] (-) TimerEvent: {}
+[10.745754] (-) TimerEvent: {}
+[10.846172] (-) TimerEvent: {}
+[10.947132] (-) TimerEvent: {}
+[11.047698] (-) TimerEvent: {}
+[11.148074] (-) TimerEvent: {}
+[11.248460] (-) TimerEvent: {}
+[11.348778] (-) TimerEvent: {}
+[11.449065] (-) TimerEvent: {}
+[11.457326] (vr_sim) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_duplicator\x1b[0m\n'}
+[11.549207] (-) TimerEvent: {}
+[11.649621] (-) TimerEvent: {}
+[11.750283] (-) TimerEvent: {}
+[11.850965] (-) TimerEvent: {}
+[11.951507] (-) TimerEvent: {}
+[11.953323] (vr_sim) StdoutLine: {'line': b'[100%] Built target image_duplicator\n'}
+[11.963878] (vr_sim) CommandEnded: {'returncode': 0}
+[11.996304] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'install'}
+[12.006607] (vr_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zulal/gazebo_ws/build/vr_sim'], 'cwd': '/home/zulal/gazebo_ws/build/vr_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zulal'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zulal/veesion/catkin_ws_ov/install/ov_msckf/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_init/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_eval/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/zulal'), ('OLDPWD', '/home/zulal'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2084'), ('SYSTEMD_EXEC_PID', '2733'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11565'), ('COLCON_PREFIX_PATH', '/home/zulal/gazebo_ws/install:/home/zulal/veesion/catkin_ws_ov/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zulal'), ('JOURNAL_STREAM', '8:16578'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zulal'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models::/home/zulal/gazebo_ws/install/vr_sim/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/zulal/.local/bin:/opt/ros/humble/bin:/home/zulal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zulal-ABRA-A5-V15-8:@/tmp/.ICE-unix/2402,unix/zulal-ABRA-A5-V15-8:/tmp/.ICE-unix/2402'), ('INVOCATION_ID', '32e5a1cfd85f4cef860099dbf9f2d106'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/gazebo_ws/install/tf_server:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/test_imu:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/home/zulal/veesion/catkin_ws_ov/install/artificial_imu:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:40edb0d4-0567-49a3-b469-7fd001f0de5f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zulal/gazebo_ws/build/vr_sim'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/test_imu:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/home/zulal/veesion/catkin_ws_ov/install/artificial_imu:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble')]), 'shell': False}
+[12.014086] (vr_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.014547] (vr_sim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.014787] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch/gazebo.launch.py\n'}
+[12.014895] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch/gazebo2.launch.py\n'}
+[12.015180] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf/head_model.urdf\n'}
+[12.015325] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf/head_only.urdf\n'}
+[12.015420] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//worlds/cafe.world\n'}
+[12.015549] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//worlds/house.world\n'}
+[12.015648] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//worlds/model1.world\n'}
+[12.015797] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//worlds/office.world\n'}
+[12.016002] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//meshes/head.stl\n'}
+[12.016131] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//meshes/head_vrglass.stl\n'}
+[12.019028] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/materials/scripts/book_page.material\n'}
+[12.019160] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/materials/textures/page.jpg\n'}
+[12.019327] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/meshes/cover.dae\n'}
+[12.019387] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/meshes/open_book.dae\n'}
+[12.019514] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/meshes/open_page.dae\n'}
+[12.019652] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/meshes/pages.dae\n'}
+[12.019706] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/model.config\n'}
+[12.019780] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/book_open/model.sdf\n'}
+[12.019855] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_3/meshes/model.dae\n'}
+[12.019925] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_3/model.config\n'}
+[12.020003] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_3/model.sdf\n'}
+[12.020122] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/materials/scripts/chair_set_2.material\n'}
+[12.020195] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/materials/textures/fabric_green.jpg\n'}
+[12.020271] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/meshes/chair_cushions.dae\n'}
+[12.020355] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/meshes/chair_frame.dae\n'}
+[12.020525] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/meshes/chair_full.dae\n'}
+[12.020694] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/meshes/model.dae\n'}
+[12.020789] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/model.config\n'}
+[12.020877] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/chair_set_2/model.sdf\n'}
+[12.020961] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/scripts/coffee_body.material\n'}
+[12.021076] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/scripts/coffee_drain.material\n'}
+[12.021191] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/scripts/coffee_panel.material\n'}
+[12.021322] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/scripts/coffee_shaft.material\n'}
+[12.021496] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/textures/black_metal.jpg\n'}
+[12.021637] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/textures/drain.jpg\n'}
+[12.021753] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/textures/panel.jpg\n'}
+[12.021908] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/materials/textures/steel.jpg\n'}
+[12.022085] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/meshes/body.dae\n'}
+[12.022227] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/meshes/coffee_machine.dae\n'}
+[12.022339] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/meshes/drain.dae\n'}
+[12.022464] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/meshes/model.dae\n'}
+[12.022602] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/meshes/panel.dae\n'}
+[12.022717] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/meshes/sivler.dae\n'}
+[12.022840] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/model.config\n'}
+[12.022953] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/coffee_machine/model.sdf\n'}
+[12.023151] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/computer_case/meshes/case.dae\n'}
+[12.023272] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/computer_case/model.config\n'}
+[12.023356] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/computer_case/model.sdf\n'}
+[12.023446] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/cup_paper/meshes/base.dae\n'}
+[12.023614] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/cup_paper/meshes/lid.dae\n'}
+[12.023780] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/cup_paper/model.config\n'}
+[12.023891] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/cup_paper/model.sdf\n'}
+[12.023957] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/desk_brown/materials/scripts/desk_brown.material\n'}
+[12.024048] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/desk_brown/materials/textures/des_b.jpg\n'}
+[12.024114] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/desk_brown/meshes/table.dae\n'}
+[12.024185] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/desk_brown/model.config\n'}
+[12.024251] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/desk_brown/model.sdf\n'}
+[12.024312] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/materials/scripts/door_3d.material\n'}
+[12.024374] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/materials/scripts/door_handle.material\n'}
+[12.024435] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/materials/textures/door_3d.jpg\n'}
+[12.024496] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/materials/textures/silver_door.jpg\n'}
+[12.024618] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/meshes/door.dae\n'}
+[12.024692] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/meshes/door_v2.dae\n'}
+[12.024765] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/meshes/door_v2_door.dae\n'}
+[12.024826] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/meshes/door_v2_handle.dae\n'}
+[12.024889] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/meshes/model.dae\n'}
+[12.024952] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/model.config\n'}
+[12.025082] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/door_3d/model.sdf\n'}
+[12.025146] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_1/meshes/body.dae\n'}
+[12.025217] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_1/meshes/model.dae\n'}
+[12.025277] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_1/meshes/ring.dae\n'}
+[12.025356] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_1/meshes/tag.dae\n'}
+[12.025428] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_1/model.config\n'}
+[12.025487] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_1/model.sdf\n'}
+[12.025548] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/materials/scripts/file_2_metal.material\n'}
+[12.025608] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/materials/textures/Metal_Rough.jpg\n'}
+[12.025668] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/meshes/body.dae\n'}
+[12.025750] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/meshes/metal.dae\n'}
+[12.025831] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/meshes/model.dae\n'}
+[12.025892] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/meshes/tag.dae\n'}
+[12.025951] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/model.config\n'}
+[12.026049] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/model.sdf\n'}
+[12.026112] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/model/Metal_Rough.jpg\n'}
+[12.026174] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_2/model/texture.png\n'}
+[12.026271] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_box_4/materials/scripts/file_box.material\n'}
+[12.026334] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_box_4/materials/textures/Woven_Slate_Blue.jpg\n'}
+[12.026419] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_box_4/meshes/body.dae\n'}
+[12.026494] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_box_4/meshes/ring.dae\n'}
+[12.026578] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_box_4/meshes/tag.dae\n'}
+[12.026638] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_box_4/model.config\n'}
+[12.026715] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_box_4/model.sdf\n'}
+[12.026797] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_cabinet_small/materials/scripts/file_black.material\n'}
+[12.026877] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_cabinet_small/materials/textures/metal_black_2.jpg\n'}
+[12.026956] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_cabinet_small/meshes/model.dae\n'}
+[12.027048] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_cabinet_small/model.config\n'}
+[12.027126] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/file_cabinet_small/model.sdf\n'}
+[12.027211] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/keyboard/meshes/key.dae\n'}
+[12.027299] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/keyboard/meshes/key_1.dae\n'}
+[12.027383] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/keyboard/meshes/keyboard1.dae\n'}
+[12.027471] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/keyboard/meshes/letters.dae\n'}
+[12.027553] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/keyboard/model.config\n'}
+[12.027636] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/keyboard/model.sdf\n'}
+[12.027728] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/materials/scripts/labtop_screen_2.material\n'}
+[12.027821] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/materials/textures/labtop_screen2.jpg\n'}
+[12.027908] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/meshes/body.dae\n'}
+[12.028001] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/meshes/keys.dae\n'}
+[12.028095] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/meshes/labtop.dae\n'}
+[12.028183] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/meshes/screen.dae\n'}
+[12.028265] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/model.config\n'}
+[12.028351] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/labtop_mac_2/model.sdf\n'}
+[12.028444] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/materials/scripts/laptop_pc_lines.material\n'}
+[12.028534] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/materials/scripts/laptop_pc_screen_1.material\n'}
+[12.028626] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/materials/scripts/laptop_pc_silver.material\n'}
+[12.028828] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/materials/textures/metal_red.jpg\n'}
+[12.028955] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/materials/textures/screen_1_pc.jpg\n'}
+[12.029105] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/materials/textures/screen_2_pc.jpg\n'}
+[12.029248] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/materials/textures/silver.jpg\n'}
+[12.030119] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/body.dae\n'}
+[12.030321] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/bottom.dae\n'}
+[12.030426] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/keys.dae\n'}
+[12.030522] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/letters.dae\n'}
+[12.030603] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/lines.dae\n'}
+[12.030745] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/mid.dae\n'}
+[12.030855] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/mid2.dae\n'}
+[12.031011] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/mid3.dae\n'}
+[12.031173] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/model.dae\n'}
+[12.031277] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/screen.dae\n'}
+[12.031511] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/meshes/silver.dae\n'}
+[12.031607] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/model.config\n'}
+[12.031720] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/laptop_pc_1/model.sdf\n'}
+[12.031940] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_1/materials/scripts/monitor_screen.material\n'}
+[12.032119] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_1/materials/textures/screen.jpg\n'}
+[12.032197] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_1/meshes/frame.dae\n'}
+[12.032268] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_1/meshes/monitor.dae\n'}
+[12.032387] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_1/meshes/screen1.dae\n'}
+[12.032606] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_1/model.config\n'}
+[12.032715] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_1/model.sdf\n'}
+[12.032909] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_2/materials/scripts/monitor_screen_2.material\n'}
+[12.033129] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_2/materials/textures/aqua_screen.jpg\n'}
+[12.033253] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_2/meshes/frame.dae\n'}
+[12.033356] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_2/meshes/monitor.dae\n'}
+[12.033453] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_2/meshes/screen1.dae\n'}
+[12.033539] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_2/model.config\n'}
+[12.033603] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_2/model.sdf\n'}
+[12.033666] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_3/materials/scripts/monitor_screen_3.material\n'}
+[12.033752] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_3/materials/textures/prog_screen.png\n'}
+[12.033816] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_3/meshes/frame.dae\n'}
+[12.033880] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_3/meshes/monitor.dae\n'}
+[12.034075] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_3/meshes/screen1.dae\n'}
+[12.034196] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_3/model.config\n'}
+[12.034274] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/monitor_3/model.sdf\n'}
+[12.034335] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/mouse/meshes/mouse.dae\n'}
+[12.034399] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/mouse/model.config\n'}
+[12.034462] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/mouse/model.sdf\n'}
+[12.034526] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_chair/meshes/chair_base.dae\n'}
+[12.034590] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_chair/meshes/chair_cushion.dae\n'}
+[12.034652] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_chair/meshes/chair_wheels.dae\n'}
+[12.034715] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_chair/model.config\n'}
+[12.034779] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_chair/model.sdf\n'}
+[12.034918] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/scripts/Floor.material\n'}
+[12.034980] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/scripts/wall_white.material\n'}
+[12.035075] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cl1.jpg\n'}
+[12.035138] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cl2.jpg\n'}
+[12.035198] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cl3.jpg\n'}
+[12.035259] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cl4.jpg\n'}
+[12.035341] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cl5.jpg\n'}
+[12.035403] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cl6.jpg\n'}
+[12.035464] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp1.jpg\n'}
+[12.035546] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp10.jpg\n'}
+[12.035630] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp11.jpg\n'}
+[12.035715] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp12.jpg\n'}
+[12.035776] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp2.jpg\n'}
+[12.035839] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp3.jpg\n'}
+[12.035934] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp4.jpg\n'}
+[12.036003] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp5.png\n'}
+[12.036085] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp6.jpg\n'}
+[12.036160] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp7.jpg\n'}
+[12.036244] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp8.jpg\n'}
+[12.036330] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/cp9.jpg\n'}
+[12.036414] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd1.jpg\n'}
+[12.036496] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd2.gif\n'}
+[12.036605] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd3.jpg\n'}
+[12.036721] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd4.jpg\n'}
+[12.036818] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd5.jpg\n'}
+[12.036914] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd6.png\n'}
+[12.037022] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd7.jpg\n'}
+[12.037143] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/hd8.jpg\n'}
+[12.037277] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/materials/textures/wall_color_white.jpg\n'}
+[12.037377] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/model.config\n'}
+[12.037493] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/office_small/model.sdf\n'}
+[12.037643] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/materials/scripts/frame_text.material\n'}
+[12.037799] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/materials/scripts/pic_frame_large_2.material\n'}
+[12.037960] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/materials/textures/animal.jpg\n'}
+[12.038125] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/materials/textures/frame.jpg\n'}
+[12.038233] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/materials/textures/fruit.jpg\n'}
+[12.038319] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/materials/textures/nature.jpg\n'}
+[12.038406] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/materials/textures/turing.jpg\n'}
+[12.038488] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/meshes/center.dae\n'}
+[12.038571] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/meshes/frame.dae\n'}
+[12.038649] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/model.config\n'}
+[12.038725] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_2/model.sdf\n'}
+[12.038817] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/scripts/frame_text.material\n'}
+[12.038898] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/scripts/pic_frame_large_6.material\n'}
+[12.039004] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/textures/animal.jpg\n'}
+[12.039096] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/textures/frame.jpg\n'}
+[12.039210] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/textures/fruit.jpg\n'}
+[12.039305] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/textures/nature.jpg\n'}
+[12.039392] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/textures/robot_2.jpg\n'}
+[12.039477] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/materials/textures/turing.jpg\n'}
+[12.039597] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/meshes/center.dae\n'}
+[12.039712] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/meshes/frame.dae\n'}
+[12.039841] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/model.config\n'}
+[12.039920] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_6/model.sdf\n'}
+[12.040008] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/materials/scripts/frame_text.material\n'}
+[12.040122] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/materials/scripts/pic_frame_large_7.material\n'}
+[12.040216] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/materials/textures/frame.jpg\n'}
+[12.040390] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/materials/textures/japanese.jpg\n'}
+[12.040556] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/meshes/center.dae\n'}
+[12.040905] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/meshes/frame.dae\n'}
+[12.041038] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/model.config\n'}
+[12.041120] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/picture_frame_large_7/model.sdf\n'}
+[12.041181] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/materials/scripts/side_table_1.material\n'}
+[12.041243] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/materials/textures/brown_light.jpg\n'}
+[12.041305] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/meshes/leg.dae\n'}
+[12.041397] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/meshes/legs.dae\n'}
+[12.041484] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/meshes/middle.dae\n'}
+[12.041542] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/meshes/side_table_1.dae\n'}
+[12.041603] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/model.config\n'}
+[12.041682] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/side_table_1/model.sdf\n'}
+[12.041741] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/materials/scripts/table_conf_2_legs.material\n'}
+[12.041822] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/materials/scripts/table_conf_2_top.material\n'}
+[12.041900] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/materials/textures/conf_wood.jpg\n'}
+[12.041974] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/materials/textures/conf_wood_2.jpg\n'}
+[12.042095] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/materials/textures/marble.jpg\n'}
+[12.042179] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/meshes/base.dae\n'}
+[12.042253] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/meshes/full.dae\n'}
+[12.042325] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/meshes/glasses.dae\n'}
+[12.042400] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/meshes/model.dae\n'}
+[12.042490] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/meshes/top.dae\n'}
+[12.042575] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/model.config\n'}
+[12.042660] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/table_conference_2/model.sdf\n'}
+[12.042753] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/materials/scripts/mat3.material\n'}
+[12.042847] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/materials/textures/tissue_pattern1.jpg\n'}
+[12.042938] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/materials/textures/tissue_pattern2.jpg\n'}
+[12.043043] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/materials/textures/tissue_pattern3.jpg\n'}
+[12.043133] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/meshes/box.dae\n'}
+[12.043221] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/meshes/paper.dae\n'}
+[12.043311] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/model.config\n'}
+[12.043400] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/tissue_box_3/model.sdf\n'}
+[12.043482] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/trash_bin/meshes/inner.dae\n'}
+[12.043567] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/trash_bin/meshes/model.dae\n'}
+[12.043656] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/trash_bin/meshes/outer.dae\n'}
+[12.043742] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/trash_bin/model.config\n'}
+[12.043830] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//models/trash_bin/model.sdf\n'}
+[12.044113] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/sphere_mover\n'}
+[12.044308] (vr_sim) StdoutLine: {'line': b'-- Symlinking: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/image_duplicator\n'}
+[12.051643] (-) TimerEvent: {}
+[12.055364] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/package_run_dependencies/vr_sim\n'}
+[12.055531] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/parent_prefix_path/vr_sim\n'}
+[12.055616] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.sh\n'}
+[12.055792] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.dsv\n'}
+[12.056052] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.sh\n'}
+[12.056146] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.dsv\n'}
+[12.056263] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.bash\n'}
+[12.056398] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.sh\n'}
+[12.056531] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.zsh\n'}
+[12.056689] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.dsv\n'}
+[12.056808] (vr_sim) StdoutLine: {'line': b'-- Symlinking: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.dsv\n'}
+[12.065908] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/packages/vr_sim\n'}
+[12.066135] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig.cmake\n'}
+[12.066244] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig-version.cmake\n'}
+[12.066329] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.xml\n'}
+[12.068184] (vr_sim) CommandEnded: {'returncode': 0}
+[12.151795] (-) TimerEvent: {}
+[12.252335] (-) TimerEvent: {}
+[12.269200] (vr_sim) JobEnded: {'identifier': 'vr_sim', 'rc': 0}
+[12.269954] (-) EventReactorShutdown: {}

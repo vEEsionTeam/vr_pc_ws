@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.000328] (-) JobUnselected: {'identifier': 'tf_server'}
+[0.000597] (vr_sim) JobQueued: {'identifier': 'vr_sim', 'dependencies': OrderedDict()}
+[0.000677] (vr_sim) JobStarted: {'identifier': 'vr_sim'}
+[0.074321] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'cmake'}
+[0.075342] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'build'}
+[0.075404] (vr_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zulal/gazebo_ws/build/vr_sim', '--', '-j12', '-l12'], 'cwd': '/home/zulal/gazebo_ws/build/vr_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zulal'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zulal/veesion/catkin_ws_ov/install/ov_msckf/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_init/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_eval/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/zulal'), ('OLDPWD', '/home/zulal'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2084'), ('SYSTEMD_EXEC_PID', '2733'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11565'), ('COLCON_PREFIX_PATH', '/home/zulal/gazebo_ws/install:/home/zulal/veesion/catkin_ws_ov/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zulal'), ('JOURNAL_STREAM', '8:16578'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zulal'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models::/home/zulal/gazebo_ws/install/vr_sim/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/zulal/.local/bin:/opt/ros/humble/bin:/home/zulal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zulal-ABRA-A5-V15-8:@/tmp/.ICE-unix/2402,unix/zulal-ABRA-A5-V15-8:/tmp/.ICE-unix/2402'), ('INVOCATION_ID', '32e5a1cfd85f4cef860099dbf9f2d106'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/gazebo_ws/install/tf_server:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/test_imu:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/home/zulal/veesion/catkin_ws_ov/install/artificial_imu:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:40edb0d4-0567-49a3-b469-7fd001f0de5f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zulal/gazebo_ws/build/vr_sim'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/test_imu:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/home/zulal/veesion/catkin_ws_ov/install/artificial_imu:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble')]), 'shell': False}
+[0.099136] (vr_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099576] (-) TimerEvent: {}
+[0.199923] (-) TimerEvent: {}
+[0.202855] (vr_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.215488] (vr_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.248832] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.253187] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.264329] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.280119] (vr_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.300038] (-) TimerEvent: {}
+[0.302405] (vr_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.376301] (vr_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.378492] (vr_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400423] (-) TimerEvent: {}
+[0.482336] (vr_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500498] (-) TimerEvent: {}
+[0.600761] (-) TimerEvent: {}
+[0.620478] (vr_sim) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.700891] (-) TimerEvent: {}
+[0.724495] (vr_sim) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.800975] (-) TimerEvent: {}
+[0.822101] (vr_sim) StdoutLine: {'line': b'-- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.830105] (vr_sim) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.901105] (-) TimerEvent: {}
+[1.001393] (-) TimerEvent: {}
+[1.101637] (-) TimerEvent: {}
+[1.105207] (vr_sim) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.110028] (vr_sim) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.111323] (vr_sim) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.119702] (vr_sim) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[1.176910] (vr_sim) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[1.201752] (-) TimerEvent: {}
+[1.301996] (-) TimerEvent: {}
+[1.351892] (vr_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.402127] (-) TimerEvent: {}
+[1.421951] (vr_sim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.422199] (vr_sim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.422294] (vr_sim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.423921] (vr_sim) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.426768] (vr_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.428378] (vr_sim) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.438912] (vr_sim) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.439148] (vr_sim) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.440774] (vr_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.442172] (vr_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.444652] (vr_sim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:48 (add_executable):\n'}
+[1.444817] (vr_sim) StderrLine: {'line': b'  Cannot find source file:\n'}
+[1.444892] (vr_sim) StderrLine: {'line': b'\n'}
+[1.444961] (vr_sim) StderrLine: {'line': b'    src/robot_movement.cpp\n'}
+[1.445028] (vr_sim) StderrLine: {'line': b'\n'}
+[1.445095] (vr_sim) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[1.445162] (vr_sim) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[1.445229] (vr_sim) StderrLine: {'line': b'\n'}
+[1.445294] (vr_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[1.445845] (vr_sim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:52 (add_executable):\n'}
+[1.445947] (vr_sim) StderrLine: {'line': b'  Cannot find source file:\n'}
+[1.446016] (vr_sim) StderrLine: {'line': b'\n'}
+[1.446101] (vr_sim) StderrLine: {'line': b'    src/robot_tf_publisher.cpp\n'}
+[1.446180] (vr_sim) StderrLine: {'line': b'\n'}
+[1.446246] (vr_sim) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[1.446313] (vr_sim) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[1.446418] (vr_sim) StderrLine: {'line': b'\n'}
+[1.446500] (vr_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[1.447167] (vr_sim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:48 (add_executable):\n'}
+[1.447246] (vr_sim) StderrLine: {'line': b'  No SOURCES given to target: robot_movement\n'}
+[1.447330] (vr_sim) StderrLine: {'line': b'\n'}
+[1.447459] (vr_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[1.447527] (vr_sim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:52 (add_executable):\n'}
+[1.447592] (vr_sim) StderrLine: {'line': b'  No SOURCES given to target: robot_tf_publisher\n'}
+[1.447658] (vr_sim) StderrLine: {'line': b'\n'}
+[1.447724] (vr_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[1.447789] (vr_sim) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[1.453285] (vr_sim) StderrLine: {'line': b'gmake: *** [Makefile:349: cmake_check_build_system] Error 1\n'}
+[1.454856] (vr_sim) CommandEnded: {'returncode': 2}
+[1.502286] (-) TimerEvent: {}
+[1.550048] (vr_sim) JobEnded: {'identifier': 'vr_sim', 'rc': 2}
+[1.551176] (-) EventReactorShutdown: {}

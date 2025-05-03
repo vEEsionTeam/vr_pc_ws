@@ -1,0 +1,29 @@
+[0.119s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[0.187s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_movement.dir/src/robot_movement.cpp.o[0m
+[12.195s] [100%] [32m[1mLinking CXX executable robot_movement[0m
+[12.713s] [100%] Built target robot_movement
+[12.726s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[12.759s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim
+[12.765s] -- Install configuration: ""
+[12.765s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch
+[12.765s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch/gazebo_launch.py
+[12.765s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf
+[12.765s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf/sphere.urdf
+[12.766s] -- Installing: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/robot_movement
+[12.770s] -- Set runtime path of "/home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/robot_movement" to ""
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/package_run_dependencies/vr_sim
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/parent_prefix_path/vr_sim
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.sh
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.dsv
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.sh
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.dsv
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.bash
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.sh
+[12.770s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.zsh
+[12.771s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.dsv
+[12.771s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.dsv
+[12.771s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/packages/vr_sim
+[12.771s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig.cmake
+[12.771s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig-version.cmake
+[12.771s] -- Up-to-date: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.xml
+[12.773s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim

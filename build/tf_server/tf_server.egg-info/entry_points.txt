@@ -1,0 +1,3 @@
+[console_scripts]
+tf_server = tf_server.tf_server:main
+

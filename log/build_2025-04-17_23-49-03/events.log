@@ -1,0 +1,119 @@
+[0.000000] (-) TimerEvent: {}
+[0.000181] (vr_sim) JobQueued: {'identifier': 'vr_sim', 'dependencies': OrderedDict()}
+[0.000209] (vr_sim) JobStarted: {'identifier': 'vr_sim'}
+[0.100086] (-) TimerEvent: {}
+[0.101653] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'cmake'}
+[0.102186] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'build'}
+[0.102849] (vr_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zulal/gazebo_ws/build/vr_sim', '--', '-j12', '-l12'], 'cwd': '/home/zulal/gazebo_ws/build/vr_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zulal'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zulal/veesion/catkin_ws_ov/install/ov_msckf/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_init/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_eval/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/zulal'), ('OLDPWD', '/home/zulal/gazebo_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2131'), ('SYSTEMD_EXEC_PID', '2746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15197'), ('COLCON_PREFIX_PATH', '/home/zulal/gazebo_ws/install:/home/zulal/veesion/catkin_ws_ov/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zulal'), ('JOURNAL_STREAM', '8:17923'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zulal'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/zulal/.local/bin:/opt/ros/humble/bin:/home/zulal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zulal-ABRA-A5-V15-8:@/tmp/.ICE-unix/2441,unix/zulal-ABRA-A5-V15-8:/tmp/.ICE-unix/2441'), ('INVOCATION_ID', 'f28942310e1f49a8837764a2f1c628a7'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a35e4b3a-d354-4d3e-8ecc-129f17356918'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zulal/gazebo_ws/build/vr_sim'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/opt/ros/humble')]), 'shell': False}
+[0.125051] (vr_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200216] (-) TimerEvent: {}
+[0.212046] (vr_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.217011] (vr_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.240944] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.243200] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.248051] (vr_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.256367] (vr_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.268217] (vr_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300337] (-) TimerEvent: {}
+[0.315175] (vr_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.316104] (vr_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400452] (-) TimerEvent: {}
+[0.402851] (vr_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500553] (-) TimerEvent: {}
+[0.530294] (vr_sim) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.600617] (-) TimerEvent: {}
+[0.700841] (-) TimerEvent: {}
+[0.739329] (vr_sim) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.800959] (-) TimerEvent: {}
+[0.901172] (-) TimerEvent: {}
+[0.998527] (vr_sim) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[1.001235] (-) TimerEvent: {}
+[1.004266] (vr_sim) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.011316] (vr_sim) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.051664] (vr_sim) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[1.101318] (-) TimerEvent: {}
+[1.201546] (-) TimerEvent: {}
+[1.219917] (vr_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.272118] (vr_sim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.272250] (vr_sim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.272301] (vr_sim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.272571] (vr_sim) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.272904] (vr_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.273165] (vr_sim) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.273766] (vr_sim) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.273846] (vr_sim) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.274046] (vr_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.274710] (vr_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.286528] (vr_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[1.287931] (vr_sim) StdoutLine: {'line': b'-- Build files have been written to: /home/zulal/gazebo_ws/build/vr_sim\n'}
+[1.301652] (-) TimerEvent: {}
+[1.308144] (vr_sim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_movement\x1b[0m\n'}
+[1.315214] (vr_sim) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/robot_tf_publisher.dir/src/robot_tf_publisher.cpp.o\x1b[0m\n'}
+[1.319796] (vr_sim) StdoutLine: {'line': b'[ 75%] Built target robot_movement\n'}
+[1.401728] (-) TimerEvent: {}
+[1.501998] (-) TimerEvent: {}
+[1.602265] (-) TimerEvent: {}
+[1.702593] (-) TimerEvent: {}
+[1.802987] (-) TimerEvent: {}
+[1.903245] (-) TimerEvent: {}
+[2.003537] (-) TimerEvent: {}
+[2.103794] (-) TimerEvent: {}
+[2.204119] (-) TimerEvent: {}
+[2.304385] (-) TimerEvent: {}
+[2.404658] (-) TimerEvent: {}
+[2.504920] (-) TimerEvent: {}
+[2.605184] (-) TimerEvent: {}
+[2.705489] (-) TimerEvent: {}
+[2.805757] (-) TimerEvent: {}
+[2.906030] (-) TimerEvent: {}
+[3.006296] (-) TimerEvent: {}
+[3.106559] (-) TimerEvent: {}
+[3.206827] (-) TimerEvent: {}
+[3.307097] (-) TimerEvent: {}
+[3.407383] (-) TimerEvent: {}
+[3.507687] (-) TimerEvent: {}
+[3.607953] (-) TimerEvent: {}
+[3.708221] (-) TimerEvent: {}
+[3.808498] (-) TimerEvent: {}
+[3.908767] (-) TimerEvent: {}
+[4.009025] (-) TimerEvent: {}
+[4.109286] (-) TimerEvent: {}
+[4.209547] (-) TimerEvent: {}
+[4.309802] (-) TimerEvent: {}
+[4.410062] (-) TimerEvent: {}
+[4.510318] (-) TimerEvent: {}
+[4.610581] (-) TimerEvent: {}
+[4.710864] (-) TimerEvent: {}
+[4.724270] (vr_sim) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable robot_tf_publisher\x1b[0m\n'}
+[4.810987] (-) TimerEvent: {}
+[4.893123] (vr_sim) StdoutLine: {'line': b'[100%] Built target robot_tf_publisher\n'}
+[4.901329] (vr_sim) CommandEnded: {'returncode': 0}
+[4.911051] (-) TimerEvent: {}
+[4.920652] (vr_sim) JobProgress: {'identifier': 'vr_sim', 'progress': 'install'}
+[4.926703] (vr_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zulal/gazebo_ws/build/vr_sim'], 'cwd': '/home/zulal/gazebo_ws/build/vr_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zulal'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zulal/veesion/catkin_ws_ov/install/ov_msckf/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_init/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_eval/lib:/home/zulal/veesion/catkin_ws_ov/install/ov_core/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/zulal'), ('OLDPWD', '/home/zulal/gazebo_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2131'), ('SYSTEMD_EXEC_PID', '2746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15197'), ('COLCON_PREFIX_PATH', '/home/zulal/gazebo_ws/install:/home/zulal/veesion/catkin_ws_ov/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zulal'), ('JOURNAL_STREAM', '8:17923'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zulal'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/zulal/.local/bin:/opt/ros/humble/bin:/home/zulal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zulal-ABRA-A5-V15-8:@/tmp/.ICE-unix/2441,unix/zulal-ABRA-A5-V15-8:/tmp/.ICE-unix/2441'), ('INVOCATION_ID', 'f28942310e1f49a8837764a2f1c628a7'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a35e4b3a-d354-4d3e-8ecc-129f17356918'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zulal/gazebo_ws/build/vr_sim'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zulal/gazebo_ws/install/vr_sim:/home/zulal/veesion/catkin_ws_ov/install/vr_marker:/home/zulal/veesion/catkin_ws_ov/install/ov_msckf:/home/zulal/veesion/catkin_ws_ov/install/ov_init:/home/zulal/veesion/catkin_ws_ov/install/ov_eval:/home/zulal/veesion/catkin_ws_ov/install/ov_data:/home/zulal/veesion/catkin_ws_ov/install/ov_core:/opt/ros/humble')]), 'shell': False}
+[4.932744] (vr_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.933074] (vr_sim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.933317] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch/gazebo.launch.py\n'}
+[4.933587] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf/head_model1.urdf\n'}
+[4.933737] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//worlds/model1.world\n'}
+[4.933903] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/robot_movement\n'}
+[4.934083] (vr_sim) StdoutLine: {'line': b'-- Symlinking: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/robot_tf_publisher\n'}
+[4.940993] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/package_run_dependencies/vr_sim\n'}
+[4.941202] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/parent_prefix_path/vr_sim\n'}
+[4.941279] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.sh\n'}
+[4.941341] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.dsv\n'}
+[4.941418] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.sh\n'}
+[4.941640] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.dsv\n'}
+[4.942024] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.bash\n'}
+[4.942142] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.sh\n'}
+[4.942247] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.zsh\n'}
+[4.942307] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.dsv\n'}
+[4.942394] (vr_sim) StdoutLine: {'line': b'-- Symlinking: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.dsv\n'}
+[4.949767] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/packages/vr_sim\n'}
+[4.950111] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig.cmake\n'}
+[4.950174] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig-version.cmake\n'}
+[4.950219] (vr_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.xml\n'}
+[4.951286] (vr_sim) CommandEnded: {'returncode': 0}
+[5.011131] (-) TimerEvent: {}
+[5.080331] (vr_sim) JobEnded: {'identifier': 'vr_sim', 'rc': 0}
+[5.081007] (-) EventReactorShutdown: {}

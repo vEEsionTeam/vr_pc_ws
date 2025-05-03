@@ -1,0 +1,67 @@
+[0.093s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[0.153s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.273s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.287s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.335s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.339s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.349s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.363s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.385s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.461s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.464s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.613s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.806s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.103s] -- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.427s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.435s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.437s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.488s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[1.674s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.744s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.744s] -- Configured cppcheck include dirs: 
+[1.744s] -- Configured cppcheck exclude dirs and/or files: 
+[1.744s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.745s] -- Added test 'lint_cmake' to check CMake code style
+[1.745s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.746s] -- Added test 'uncrustify' to check C / C++ code style
+[1.746s] -- Configured uncrustify additional arguments: 
+[1.746s] -- Added test 'xmllint' to check XML markup files
+[1.748s] -- Configuring done
+[1.769s] -- Generating done
+[1.770s] -- Build files have been written to: /home/zulal/gazebo_ws/build/vr_sim
+[1.791s] [35m[1mConsolidate compiler generated dependencies of target robot_movement[0m
+[1.791s] [35m[1mConsolidate compiler generated dependencies of target robot_tf_publisher[0m
+[1.799s] [ 16%] [32mBuilding CXX object CMakeFiles/sphere_mover.dir/src/sphere_mover_node.cpp.o[0m
+[1.804s] [ 50%] Built target robot_movement
+[1.805s] [ 83%] Built target robot_tf_publisher
+[8.617s] [100%] [32m[1mLinking CXX executable sphere_mover[0m
+[8.979s] [100%] Built target sphere_mover
+[8.987s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[9.018s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim
+[9.023s] -- Install configuration: ""
+[9.023s] -- Execute custom install script
+[9.024s] -- Symlinking: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch/gazebo.launch 2.py
+[9.031s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch/gazebo.launch.py
+[9.031s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf/sphere.urdf
+[9.031s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf/sphere2.urdf
+[9.031s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//worlds/model1.world
+[9.031s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//meshes/head_model1.stl
+[9.031s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/robot_movement
+[9.032s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/robot_tf_publisher
+[9.032s] -- Symlinking: /home/zulal/gazebo_ws/install/vr_sim/lib/vr_sim/sphere_mover
+[9.040s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/package_run_dependencies/vr_sim
+[9.040s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/parent_prefix_path/vr_sim
+[9.040s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.sh
+[9.040s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/ament_prefix_path.dsv
+[9.040s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.sh
+[9.041s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/environment/path.dsv
+[9.041s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.bash
+[9.041s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.sh
+[9.041s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.zsh
+[9.041s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/local_setup.dsv
+[9.041s] -- Symlinking: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.dsv
+[9.050s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/ament_index/resource_index/packages/vr_sim
+[9.050s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig.cmake
+[9.050s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/cmake/vr_simConfig-version.cmake
+[9.050s] -- Up-to-date symlink: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.xml
+[9.052s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim

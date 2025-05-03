@@ -1,0 +1,21 @@
+[2.257s] Invoking command in '/home/zulal/gazebo_ws/src/vr_camera': PYTHONPATH=/home/zulal/gazebo_ws/build/vr_camera/prefix_override:/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vr_camera build --build-base /home/zulal/gazebo_ws/build/vr_camera/build install --record /home/zulal/gazebo_ws/build/vr_camera/install.log --single-version-externally-managed
+[2.690s] running egg_info
+[2.691s] writing ../../build/vr_camera/vr_camera.egg-info/PKG-INFO
+[2.691s] writing dependency_links to ../../build/vr_camera/vr_camera.egg-info/dependency_links.txt
+[2.691s] writing entry points to ../../build/vr_camera/vr_camera.egg-info/entry_points.txt
+[2.691s] writing requirements to ../../build/vr_camera/vr_camera.egg-info/requires.txt
+[2.692s] writing top-level names to ../../build/vr_camera/vr_camera.egg-info/top_level.txt
+[2.694s] reading manifest file '../../build/vr_camera/vr_camera.egg-info/SOURCES.txt'
+[2.694s] writing manifest file '../../build/vr_camera/vr_camera.egg-info/SOURCES.txt'
+[2.694s] running build
+[2.694s] running build_py
+[2.694s] running install
+[2.695s] running install_lib
+[2.696s] running install_data
+[2.697s] running install_egg_info
+[2.698s] removing '/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages/vr_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[2.698s] Copying ../../build/vr_camera/vr_camera.egg-info to /home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages/vr_camera-0.0.0-py3.10.egg-info
+[2.701s] running install_scripts
+[2.732s] Installing vr_node script to /home/zulal/gazebo_ws/install/vr_camera/lib/vr_camera
+[2.733s] writing list of installed files to '/home/zulal/gazebo_ws/build/vr_camera/install.log'
+[2.811s] Invoked command in '/home/zulal/gazebo_ws/src/vr_camera' returned '0': PYTHONPATH=/home/zulal/gazebo_ws/build/vr_camera/prefix_override:/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vr_camera build --build-base /home/zulal/gazebo_ws/build/vr_camera/build install --record /home/zulal/gazebo_ws/build/vr_camera/install.log --single-version-externally-managed

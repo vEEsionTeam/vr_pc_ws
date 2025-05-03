@@ -1,0 +1,21 @@
+[2.234s] Invoking command in '/home/zulal/gazebo_ws/src/tf_server': PYTHONPATH=/home/zulal/gazebo_ws/build/tf_server/prefix_override:/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_server build --build-base /home/zulal/gazebo_ws/build/tf_server/build install --record /home/zulal/gazebo_ws/build/tf_server/install.log --single-version-externally-managed
+[2.645s] running egg_info
+[2.646s] writing ../../build/tf_server/tf_server.egg-info/PKG-INFO
+[2.646s] writing dependency_links to ../../build/tf_server/tf_server.egg-info/dependency_links.txt
+[2.646s] writing entry points to ../../build/tf_server/tf_server.egg-info/entry_points.txt
+[2.647s] writing requirements to ../../build/tf_server/tf_server.egg-info/requires.txt
+[2.647s] writing top-level names to ../../build/tf_server/tf_server.egg-info/top_level.txt
+[2.651s] reading manifest file '../../build/tf_server/tf_server.egg-info/SOURCES.txt'
+[2.652s] writing manifest file '../../build/tf_server/tf_server.egg-info/SOURCES.txt'
+[2.653s] running build
+[2.653s] running build_py
+[2.653s] running install
+[2.653s] running install_lib
+[2.656s] running install_data
+[2.656s] running install_egg_info
+[2.660s] removing '/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages/tf_server-0.0.0-py3.10.egg-info' (and everything under it)
+[2.660s] Copying ../../build/tf_server/tf_server.egg-info to /home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages/tf_server-0.0.0-py3.10.egg-info
+[2.661s] running install_scripts
+[2.693s] Installing tf_server script to /home/zulal/gazebo_ws/install/tf_server/lib/tf_server
+[2.693s] writing list of installed files to '/home/zulal/gazebo_ws/build/tf_server/install.log'
+[2.813s] Invoked command in '/home/zulal/gazebo_ws/src/tf_server' returned '0': PYTHONPATH=/home/zulal/gazebo_ws/build/tf_server/prefix_override:/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_server build --build-base /home/zulal/gazebo_ws/build/tf_server/build install --record /home/zulal/gazebo_ws/build/tf_server/install.log --single-version-externally-managed

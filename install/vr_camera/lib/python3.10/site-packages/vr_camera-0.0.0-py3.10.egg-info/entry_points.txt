@@ -1,0 +1,3 @@
+[console_scripts]
+vr_node = vr_camera.vr_node:main
+

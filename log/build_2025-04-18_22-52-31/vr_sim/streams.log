@@ -1,0 +1,12 @@
+[0.135s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[0.217s] [ 50%] [32mBuilding CXX object CMakeFiles/sphere_mover.dir/src/sphere_mover_node.cpp.o[0m
+[0.218s] [ 50%] Built target robot_movement
+[0.218s] [ 83%] Built target robot_tf_publisher
+[3.875s] [100%] [32m[1mLinking CXX executable sphere_mover[0m
+[4.044s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[4.044s] (.text+0x1b): undefined reference to `main'
+[4.055s] collect2: error: ld returned 1 exit status
+[4.056s] gmake[2]: *** [CMakeFiles/sphere_mover.dir/build.make:183: sphere_mover] Error 1
+[4.056s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/sphere_mover.dir/all] Error 2
+[4.056s] gmake: *** [Makefile:146: all] Error 2
+[4.058s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12

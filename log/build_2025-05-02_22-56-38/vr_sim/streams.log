@@ -1,0 +1,61 @@
+[0.076s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[0.099s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.202s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.215s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.248s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.253s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.264s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.280s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.302s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.376s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.378s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.482s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.620s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.724s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.822s] -- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)
+[0.829s] -- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.105s] -- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.109s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.111s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.119s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.176s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[1.351s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.421s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.422s] -- Configured cppcheck include dirs: 
+[1.422s] -- Configured cppcheck exclude dirs and/or files: 
+[1.423s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.426s] -- Added test 'lint_cmake' to check CMake code style
+[1.428s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.438s] -- Added test 'uncrustify' to check C / C++ code style
+[1.439s] -- Configured uncrustify additional arguments: 
+[1.440s] -- Added test 'xmllint' to check XML markup files
+[1.442s] -- Configuring done
+[1.444s] [31mCMake Error at CMakeLists.txt:48 (add_executable):
+[1.444s]   Cannot find source file:
+[1.444s] 
+[1.444s]     src/robot_movement.cpp
+[1.444s] 
+[1.444s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.445s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.445s] 
+[1.445s] [0m
+[1.445s] [31mCMake Error at CMakeLists.txt:52 (add_executable):
+[1.445s]   Cannot find source file:
+[1.445s] 
+[1.445s]     src/robot_tf_publisher.cpp
+[1.446s] 
+[1.446s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.446s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.446s] 
+[1.446s] [0m
+[1.447s] [31mCMake Error at CMakeLists.txt:48 (add_executable):
+[1.447s]   No SOURCES given to target: robot_movement
+[1.447s] 
+[1.447s] [0m
+[1.447s] [31mCMake Error at CMakeLists.txt:52 (add_executable):
+[1.447s]   No SOURCES given to target: robot_tf_publisher
+[1.447s] 
+[1.447s] [0m
+[1.447s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.453s] gmake: *** [Makefile:349: cmake_check_build_system] Error 1
+[1.454s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12

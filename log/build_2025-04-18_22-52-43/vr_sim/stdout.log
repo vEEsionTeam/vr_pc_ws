@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target sphere_mover[0m
+[ 66%] Built target robot_tf_publisher
+[ 66%] Built target robot_movement
+[ 83%] [32m[1mLinking CXX executable sphere_mover[0m

@@ -1,0 +1,7 @@
+[01m[K/home/zulal/gazebo_ws/src/vr_sim/src/robot_movement.cpp:[m[K In member function ‘[01m[Kvoid RobotMovement::pose_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zulal/gazebo_ws/src/vr_sim/src/robot_movement.cpp:27:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _state_type = struct gazebo_msgs::msg::EntityState_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct gazebo_msgs::msg::EntityState_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kmodel_name[m[K’
+   27 |         request->state.[01;31m[Kmodel_name[m[K = "sphere"; // Must match the spawned model's name
+      |                        [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/robot_movement.dir/build.make:76: CMakeFiles/robot_movement.dir/src/robot_movement.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_movement.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

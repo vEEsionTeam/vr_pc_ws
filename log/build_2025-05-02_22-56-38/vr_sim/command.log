@@ -1,0 +1,2 @@
+Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12

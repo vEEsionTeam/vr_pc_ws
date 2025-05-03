@@ -1,0 +1,18 @@
+[0.115s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[0.165s] [35m[1mConsolidate compiler generated dependencies of target robot_movement[0m
+[0.181s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_movement.dir/src/robot_movement.cpp.o[0m
+[10.334s] [100%] [32m[1mLinking CXX executable robot_movement[0m
+[10.880s] [100%] Built target robot_movement
+[10.893s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[10.928s] Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim
+[10.936s] -- Install configuration: ""
+[10.936s] -- Installing: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch
+[10.936s] -- Installing: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//launch/gazebo_launch.py
+[10.936s] -- Installing: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf
+[10.936s] -- Installing: /home/zulal/gazebo_ws/install/vr_sim/share/vr_sim//urdf/sphere.urdf
+[10.936s] [31mCMake Error at cmake_install.cmake:46 (file):
+[10.937s]   file INSTALL cannot find "/home/zulal/gazebo_ws/src/vr_sim/scripts": No
+[10.937s]   such file or directory.
+[10.937s] 
+[10.937s] [0m
+[10.939s] Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim

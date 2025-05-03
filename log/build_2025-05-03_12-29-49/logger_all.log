@@ -1,0 +1,242 @@
+[1.715s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.716s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x760497d16860>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7604987cfe80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7604987cfe80>>)
+[1.796s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.796s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.796s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.796s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.796s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.796s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.796s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zulal/gazebo_ws'
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extensions ['ignore', 'ignore_ament_install']
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extension 'ignore'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extension 'ignore_ament_install'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extensions ['colcon_pkg']
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extension 'colcon_pkg'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extensions ['colcon_meta']
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extension 'colcon_meta'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extensions ['ros']
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_server) by extension 'ros'
+[1.817s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tf_server' with type 'ros.ament_python' and name 'tf_server'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extensions ['ignore', 'ignore_ament_install']
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extension 'ignore'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extension 'ignore_ament_install'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extensions ['colcon_pkg']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extension 'colcon_pkg'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extensions ['colcon_meta']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extension 'colcon_meta'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extensions ['ros']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_camera) by extension 'ros'
+[1.819s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vr_camera' with type 'ros.ament_python' and name 'vr_camera'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extensions ['ignore', 'ignore_ament_install']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extension 'ignore'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extension 'ignore_ament_install'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extensions ['colcon_pkg']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extension 'colcon_pkg'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extensions ['colcon_meta']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extension 'colcon_meta'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extensions ['ros']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vr_sim) by extension 'ros'
+[1.821s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vr_sim' with type 'ros.ament_cmake' and name 'vr_sim'
+[1.821s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.980s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.980s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.048s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/zulal/gazebo_ws/install
+[2.074s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/zulal/veesion/catkin_ws_ov/install
+[2.100s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 409 installed packages in /opt/ros/humble
+[2.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'cmake_args' from command line to 'None'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'cmake_target' from command line to 'None'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'cmake_clean_cache' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'cmake_clean_first' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'cmake_force_configure' from command line to 'False'
+[2.271s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'ament_cmake_args' from command line to 'None'
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'catkin_cmake_args' from command line to 'None'
+[2.272s] Level 5:colcon.colcon_core.verb:set package 'tf_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.272s] DEBUG:colcon.colcon_core.verb:Building package 'tf_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zulal/gazebo_ws/build/tf_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zulal/gazebo_ws/install/tf_server', 'merge_install': False, 'path': '/home/zulal/gazebo_ws/src/tf_server', 'symlink_install': False, 'test_result_base': None}
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'cmake_args' from command line to 'None'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'cmake_target' from command line to 'None'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'cmake_clean_first' from command line to 'False'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'cmake_force_configure' from command line to 'False'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'ament_cmake_args' from command line to 'None'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'vr_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.296s] DEBUG:colcon.colcon_core.verb:Building package 'vr_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zulal/gazebo_ws/build/vr_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zulal/gazebo_ws/install/vr_camera', 'merge_install': False, 'path': '/home/zulal/gazebo_ws/src/vr_camera', 'symlink_install': False, 'test_result_base': None}
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'cmake_args' from command line to 'None'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'cmake_target' from command line to 'None'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'cmake_clean_first' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'cmake_force_configure' from command line to 'False'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'ament_cmake_args' from command line to 'None'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[2.322s] Level 5:colcon.colcon_core.verb:set package 'vr_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.322s] DEBUG:colcon.colcon_core.verb:Building package 'vr_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zulal/gazebo_ws/build/vr_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zulal/gazebo_ws/install/vr_sim', 'merge_install': False, 'path': '/home/zulal/gazebo_ws/src/vr_sim', 'symlink_install': False, 'test_result_base': None}
+[2.351s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.386s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.387s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zulal/gazebo_ws/src/tf_server' with build type 'ament_python'
+[2.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_server', 'ament_prefix_path')
+[2.429s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/hook/ament_prefix_path.ps1'
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/hook/ament_prefix_path.dsv'
+[2.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/hook/ament_prefix_path.sh'
+[2.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.584s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zulal/gazebo_ws/src/vr_camera' with build type 'ament_python'
+[2.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('vr_camera', 'ament_prefix_path')
+[2.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/hook/ament_prefix_path.ps1'
+[2.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/hook/ament_prefix_path.dsv'
+[2.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/hook/ament_prefix_path.sh'
+[2.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.733s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zulal/gazebo_ws/src/vr_sim' with build type 'ament_cmake'
+[2.734s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zulal/gazebo_ws/src/vr_sim'
+[2.766s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.766s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.352s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zulal/gazebo_ws/src/tf_server'
+[3.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.971s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zulal/gazebo_ws/src/vr_camera'
+[3.998s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.998s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/vr_camera:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[4.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/vr_camera:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --build /home/zulal/gazebo_ws/build/vr_sim -- -j12 -l12
+[4.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zulal/gazebo_ws/build/vr_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/vr_camera:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim
+[4.351s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vr_sim)
+[4.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zulal/gazebo_ws/build/vr_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zulal/gazebo_ws/install/vr_camera:/home/zulal/gazebo_ws/install/tf_server:/opt/ros/humble /usr/bin/cmake --install /home/zulal/gazebo_ws/build/vr_sim
+[4.380s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim' for CMake module files
+[4.381s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim' for CMake config files
+[4.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('vr_sim', 'cmake_prefix_path')
+[4.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/hook/cmake_prefix_path.ps1'
+[4.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/hook/cmake_prefix_path.dsv'
+[4.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/hook/cmake_prefix_path.sh'
+[4.419s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/lib'
+[4.420s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/bin'
+[4.420s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/lib/pkgconfig/vr_sim.pc'
+[4.420s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/lib/python3.10/site-packages'
+[4.421s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/bin'
+[4.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.ps1'
+[4.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.dsv'
+[4.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.sh'
+[4.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.bash'
+[4.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.zsh'
+[4.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zulal/gazebo_ws/install/vr_sim/share/colcon-core/packages/vr_sim)
+[4.534s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vr_sim)
+[4.574s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim' for CMake module files
+[4.577s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim' for CMake config files
+[4.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('vr_sim', 'cmake_prefix_path')
+[4.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/hook/cmake_prefix_path.ps1'
+[4.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/hook/cmake_prefix_path.dsv'
+[4.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/hook/cmake_prefix_path.sh'
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/lib'
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/bin'
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/lib/pkgconfig/vr_sim.pc'
+[4.617s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/lib/python3.10/site-packages'
+[4.618s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_sim/bin'
+[4.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.ps1'
+[4.645s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.dsv'
+[4.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.sh'
+[4.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.bash'
+[4.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_sim/share/vr_sim/package.zsh'
+[4.646s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zulal/gazebo_ws/install/vr_sim/share/colcon-core/packages/vr_sim)
+[4.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zulal/gazebo_ws/src/tf_server': PYTHONPATH=/home/zulal/gazebo_ws/build/tf_server/prefix_override:/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_server build --build-base /home/zulal/gazebo_ws/build/tf_server/build install --record /home/zulal/gazebo_ws/build/tf_server/install.log --single-version-externally-managed
+[4.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zulal/gazebo_ws/src/vr_camera': PYTHONPATH=/home/zulal/gazebo_ws/build/vr_camera/prefix_override:/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vr_camera build --build-base /home/zulal/gazebo_ws/build/vr_camera/build install --record /home/zulal/gazebo_ws/build/vr_camera/install.log --single-version-externally-managed
+[5.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zulal/gazebo_ws/src/tf_server' returned '0': PYTHONPATH=/home/zulal/gazebo_ws/build/tf_server/prefix_override:/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_server build --build-base /home/zulal/gazebo_ws/build/tf_server/build install --record /home/zulal/gazebo_ws/build/tf_server/install.log --single-version-externally-managed
+[5.271s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/tf_server' for CMake module files
+[5.272s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/tf_server' for CMake config files
+[5.273s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/tf_server/lib'
+[5.273s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/tf_server/bin'
+[5.273s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/tf_server/lib/pkgconfig/tf_server.pc'
+[5.274s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/tf_server/lib/python3.10/site-packages'
+[5.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_server', 'pythonpath')
+[5.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/hook/pythonpath.ps1'
+[5.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/hook/pythonpath.dsv'
+[5.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/hook/pythonpath.sh'
+[5.307s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/tf_server/bin'
+[5.307s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tf_server)
+[5.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/package.ps1'
+[5.333s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/package.dsv'
+[5.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/package.sh'
+[5.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/package.bash'
+[5.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/tf_server/share/tf_server/package.zsh'
+[5.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zulal/gazebo_ws/install/tf_server/share/colcon-core/packages/tf_server)
+[5.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zulal/gazebo_ws/src/vr_camera' returned '0': PYTHONPATH=/home/zulal/gazebo_ws/build/vr_camera/prefix_override:/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vr_camera build --build-base /home/zulal/gazebo_ws/build/vr_camera/build install --record /home/zulal/gazebo_ws/build/vr_camera/install.log --single-version-externally-managed
+[5.366s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_camera' for CMake module files
+[5.367s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_camera' for CMake config files
+[5.367s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_camera/lib'
+[5.367s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_camera/bin'
+[5.367s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_camera/lib/pkgconfig/vr_camera.pc'
+[5.368s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_camera/lib/python3.10/site-packages'
+[5.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('vr_camera', 'pythonpath')
+[5.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/hook/pythonpath.ps1'
+[5.395s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/hook/pythonpath.dsv'
+[5.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/hook/pythonpath.sh'
+[5.396s] Level 1:colcon.colcon_core.environment:checking '/home/zulal/gazebo_ws/install/vr_camera/bin'
+[5.396s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vr_camera)
+[5.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/package.ps1'
+[5.448s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/package.dsv'
+[5.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/package.sh'
+[5.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/package.bash'
+[5.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/zulal/gazebo_ws/install/vr_camera/share/vr_camera/package.zsh'
+[5.449s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zulal/gazebo_ws/install/vr_camera/share/colcon-core/packages/vr_camera)
+[5.450s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.450s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.450s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.450s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.485s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.504s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.533s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zulal/gazebo_ws/install/local_setup.ps1'
+[5.537s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zulal/gazebo_ws/install/_local_setup_util_ps1.py'
+[5.539s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zulal/gazebo_ws/install/setup.ps1'
+[5.566s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zulal/gazebo_ws/install/local_setup.sh'
+[5.567s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zulal/gazebo_ws/install/_local_setup_util_sh.py'
+[5.570s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zulal/gazebo_ws/install/setup.sh'
+[5.601s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zulal/gazebo_ws/install/local_setup.bash'
+[5.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zulal/gazebo_ws/install/setup.bash'
+[5.631s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zulal/gazebo_ws/install/local_setup.zsh'
+[5.631s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zulal/gazebo_ws/install/setup.zsh'
