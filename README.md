@@ -16,6 +16,7 @@ Update the following line in both comm_ws/.../tf_client.py and gazebo_ws/.../tf_
 ```python
 self.declare_parameter('server_ip', '192.168.x.x')
 ```
+!!!*Build changes and source the workspace*!!!
 ## Terminal Launch Instructions (7 Terminals Total)
 ### 🍓 On Raspberry Pi — 4 Terminals
 #### 📷 Run Camera Node
