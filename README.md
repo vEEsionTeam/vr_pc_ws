@@ -33,7 +33,7 @@ self.declare_parameter('server_ip', '192.168.x.x')
 ```
 #### 🧠 Run OpenVINS
 ```sh
-./vr_scripts/camera.sh
+./vr_scripts/open_vins.sh
 ```
 ### 💻 On Host Computer — 3 Terminals
 #### 🛰️ Start Server Communication
