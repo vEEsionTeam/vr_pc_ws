@@ -40,7 +40,7 @@ self.declare_parameter('server_ip', '192.168.x.x')
 ```sh
 cd ~/gazebo_ws
 source install/setup.bash
-ros2 run tf_server tf_server --ros-args -p server_ip:=<192.168.x.x>
+ros2 run tf_server tf_server --ros-args -p server_ip:=192.168.
 ```
 #### 🖼️ Run RViz
 ```sh
