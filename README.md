@@ -67,6 +67,7 @@ source install/setup.bash
 Consider using terminal multiplexers like terminator for efficient multi-terminal management.
 
 
+![Screenshot from 2025-05-03 13-04-31](https://github.com/user-attachments/assets/d4ec60a3-9cbc-4058-ab6d-b5eacd94142d)
 
 
 
