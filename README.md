@@ -35,6 +35,11 @@ self.declare_parameter('server_ip', '192.168.x.x')
 ```sh
 ./vr_scripts/openvins.sh
 ```
+
+#### Patch Recording
+```sh
+ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p topic_type:=Odometry -p output:=/home/veesion/veesion_ws/path_recording/test1.txt
+```
 ### 💻 On Host Computer — 3 Terminals
 #### 🛰️ Start Server Communication
 ```sh
