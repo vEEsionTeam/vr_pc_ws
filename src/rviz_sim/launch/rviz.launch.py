@@ -36,7 +36,7 @@ def launch_setup(context):
         condition=IfCondition(LaunchConfiguration("rviz_enable")),
         arguments=[
             "-d",
-            os.path.join(pkg_share, "launch", "display_ros2.rviz"),
+            os.path.join(pkg_share, "launch", "display_ros2_v2.rviz"),
             "--ros-args",
             "--log-level",
             "warn",
