@@ -3,8 +3,13 @@
 ## 🔌 Wired/Wireless Configuration
 
 ### SSH into Raspberry Pi
+Check the RPI IP
 ```sh
 ssh veesion@192.168.1.2
+```
+or 
+```sh
+ssh veesion@192.168.1.84
 ```
 ## Terminal Launch Instructions (7 Terminals Total)
 ### 🍓 On Raspberry Pi — 4 Terminals
@@ -62,12 +67,12 @@ colcon build
 Always source the workspace before running any ROS 2 commands:
 ```sh
 source install/setup.bash
-
 ```
+
 Consider using terminal multiplexers like terminator for efficient multi-terminal management.
-
-
-![Screenshot from 2025-05-03 13-04-31](https://github.com/user-attachments/assets/d4ec60a3-9cbc-4058-ab6d-b5eacd94142d)
-
+##### Copy a file form RPI to PC
+```sh
+scp veesion@192.168.1.2:/home/veesion/veesion_ws/path_recording/testx1.txt ~/Desktop/paths/
+```
 
 
