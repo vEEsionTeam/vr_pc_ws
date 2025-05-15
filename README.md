@@ -13,15 +13,23 @@ ssh veesion@192.168.1.84
 ```
 ## Terminal Launch Instructions (7 Terminals Total)
 ### 🍓 On Raspberry Pi — 4 Terminals
-#### 📷 Run Camera Node
+### 💻 On Host Computer — 3 Terminals
+
+#### 🍓📷 Run Camera Node
 ```sh
 ./vr_scripts/camera.sh
 ```
-#### 📡 Run IMU Node
+#### 🍓📡 Run IMU Node
 ```sh
 ./vr_scripts/imu.sh
 ```
-#### 🌐 Run Client Communication
+#### 💻🛰️ Start Server Communication
+```sh
+./server.sh --img 0 --path 0 --points 0 --ip 192.168. 
+```
+!!! CHANGE SERVER_IP
+
+#### 🍓🌐 Run Client Communication
 ```sh
 ./vr_scripts/tf_client2.py --ros-args -p img_enable:=1 -p path_enable:=0 -p points_enable:=0 -p server_ip:=192.168.  
 ```
@@ -30,32 +38,29 @@ Check the IP address on the server:
 ```sh
 hostname -I
 ```
-#### 🧠 Run OpenVINS
-```sh
-./vr_scripts/openvins.sh
-```
 
-#### Patch Recording
-```sh
-ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p topic_type:=Odometry -p output:=/home/veesion/veesion_ws/path_recording/test1.txt
-```
-### 💻 On Host Computer — 3 Terminals
-#### 🛰️ Start Server Communication
-```sh
-./server.sh --img 0 --path 0 --points 0 --ip 192.168. 
-```
-!!! CHANGE SERVER_IP
-#### 🖼️ Run RViz
+#### 💻🖼️ Run RViz
 ```sh
 ./rviz.sh
 ```
-#### 🏞️ Launch Gazebo Environment
+#### 💻🏞️ Launch Gazebo Environment
 ```sh
 ./gazebo.sh
 ```
 
+#### 🍓🧠 Run OpenVINS
+```sh
+./vr_scripts/openvins.sh
+```
+
+#### 🍓 Patch Recording
+```sh
+ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p topic_type:=Odometry -p output:=/home/veesion/veesion_ws/path_recording/test1.txt
+```
+
+
 #### 📝 Notes
-Make sure all ROS 2 packages are built using:
+Make sure all ROS 2 packages are built after any change:
 ```sh
 colcon build
 ```
