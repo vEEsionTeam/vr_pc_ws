@@ -2,21 +2,10 @@
 
 ## 🔌 Wired/Wireless Configuration
 
-### 1️⃣ SSH into Raspberry Pi
+### SSH into Raspberry Pi
 ```sh
 ssh veesion@192.168.1.2
 ```
-
-### 2️⃣ Update IP Address (if needed)
-Check the IP address on the server:
-```sh
-hostname -I
-```
-Update the following line in both comm_ws/.../tf_client.py and gazebo_ws/.../tf_server.py:
-```python
-self.declare_parameter('server_ip', '192.168.x.x')
-```
-!!!*Build changes and source the workspace*!!!
 ## Terminal Launch Instructions (7 Terminals Total)
 ### 🍓 On Raspberry Pi — 4 Terminals
 #### 📷 Run Camera Node
@@ -30,6 +19,11 @@ self.declare_parameter('server_ip', '192.168.x.x')
 #### 🌐 Run Client Communication
 ```sh
 ../vr_scripts/tf_client.py --ros-args -p server_port:=5005 -p server_ip:=192.168. 
+```
+!!! CHANGE SERVER_IP
+Check the IP address on the server:
+```sh
+hostname -I
 ```
 #### 🧠 Run OpenVINS
 ```sh
@@ -45,8 +39,9 @@ ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p top
 ```sh
 cd ~/gazebo_ws
 source install/setup.bash
-ros2 run tf_server tf_server --ros-args -p server_ip:=192.168.
+ros2 run tf_server tf_server --ros-args -p server_port:=5005 -p server_ip:=192.168.
 ```
+!!! CHANGE SERVER_IP
 #### 🖼️ Run RViz
 ```sh
 cd ~/gazebo_ws
