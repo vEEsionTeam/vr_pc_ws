@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-	    'tf_server = tf_server.tf_server:main',
-
+            'tf_server = tf_server.tf_server:main',
+            'tf_server2 = tf_server.tf_server2:main',  # <- Add this line
         ],
     },
 )
