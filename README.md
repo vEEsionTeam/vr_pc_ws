@@ -23,7 +23,7 @@ ssh veesion@192.168.1.84
 ```
 #### 🌐 Run Client Communication
 ```sh
-../vr_scripts/tf_client.py --ros-args -p server_port:=5005 -p server_ip:=192.168. 
+./vr_scripts/tf_client2.py --ros-args -p server_port:=5005 -p server_ip:=192.168.1.46  -p img_enable:=1
 ```
 !!! CHANGE SERVER_IP
 Check the IP address on the server:
@@ -44,7 +44,7 @@ ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p top
 ```sh
 cd ~/vr_pc_ws
 source install/setup.bash
-ros2 run tf_server tf_server --ros-args -p server_port:=5005 -p server_ip:=192.168.
+ros2 run tf_server tf_server2 --ros-args -p server_port:=5005 -p server_ip:=192.168. -p img_enable:=1
 ```
 !!! CHANGE SERVER_IP
 #### 🖼️ Run RViz
