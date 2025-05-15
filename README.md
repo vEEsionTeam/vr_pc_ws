@@ -53,13 +53,13 @@ hostname -I
 ./vr_scripts/openvins.sh
 ```
 
+### 📝 Notes
+
 #### 🍓 Patch Recording
 ```sh
 ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p topic_type:=Odometry -p output:=/home/veesion/veesion_ws/path_recording/test1.txt
 ```
 
-
-#### 📝 Notes
 Make sure all ROS 2 packages are built after any change:
 ```sh
 colcon build
@@ -70,7 +70,7 @@ source install/setup.bash
 ```
 
 Consider using terminal multiplexers like terminator for efficient multi-terminal management.
-##### Copy a file form RPI to PC
+#### 💻 Copy a file form RPI to PC
 ```sh
 scp veesion@192.168.1.2:/home/veesion/veesion_ws/path_recording/testx1.txt ~/Desktop/paths/
 ```
