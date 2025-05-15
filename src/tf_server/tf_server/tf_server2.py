@@ -148,6 +148,7 @@ class TFServer(Node):
                 np_arr = np.frombuffer(image_data, np.uint8)
                 cv_image = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
                 if cv_image is not None:
+                    cv_image = cv2.flip(cv_image, 0)  # Flip vertically (upside down)
                     ros_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
                     ros_image.header.stamp = self.get_clock().now().to_msg()
                     ros_image.header.frame_id = 'camera_frame'
