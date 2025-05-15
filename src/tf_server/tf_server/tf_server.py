@@ -7,7 +7,7 @@ from geometry_msgs.msg import TransformStamped
 class TFServer(Node):
     def __init__(self):
         super().__init__('tf_server')
-        self.declare_parameter('server_ip', '192.168.1.46')  # Change to your PC's IP
+        self.declare_parameter('server_ip', '192.168.x.x')  # Change to your PC's IP
         self.declare_parameter('server_port', 5005)
 
         self.server_ip = self.get_parameter('server_ip').get_parameter_value().string_value
@@ -26,7 +26,7 @@ class TFServer(Node):
         self.tf_broadcaster = TransformBroadcaster(self)
         self.buffer = ""
 
-        self.timer = self.create_timer(0.005, self.receive_tf_data)  # 200 Hz
+        self.timer = self.create_timer(0.02, self.receive_tf_data)  # 50 Hz
 
     def receive_tf_data(self):
         try:
