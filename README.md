@@ -23,7 +23,7 @@ ssh veesion@192.168.1.84
 ```
 #### 🌐 Run Client Communication
 ```sh
-./vr_scripts/tf_client2.py --ros-args -p img_enable:=1 -p path_enable:=0 -p points_enable:=0 server_ip:=192.168.  
+./vr_scripts/tf_client2.py --ros-args -p img_enable:=1 -p path_enable:=0 -p points_enable:=0 -p server_ip:=192.168.  
 ```
 !!! CHANGE SERVER_IP
 Check the IP address on the server:
