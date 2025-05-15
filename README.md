@@ -55,7 +55,7 @@ hostname -I
 
 ### 📝 Notes
 
-#### 🍓 Patch Recording
+#### 🍓 Path Recording
 ```sh
 ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p topic_type:=Odometry -p output:=/home/veesion/veesion_ws/path_recording/test1.txt
 ```
@@ -73,6 +73,10 @@ Consider using terminal multiplexers like terminator for efficient multi-termina
 #### 💻 Copy a file form RPI to PC
 ```sh
 scp veesion@192.168.1.2:/home/veesion/veesion_ws/path_recording/testx1.txt ~/Desktop/paths/
+```
+#### Additional Commands
+```sh
+ros2 launch ov_msckf veesion1.launch.py config:=veesion3 rviz_enable:=false
 ```
 
 
