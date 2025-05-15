@@ -9,7 +9,7 @@
     <visual>
       <origin xyz="-0.08 -0.2 -0.1" rpy="0 0 0"/>  <!-- Moves it down by 5 cm -->
       <geometry>
-        <mesh filename="package://vr_sim/meshes/head.stl" scale="0.0001 0.0001 0.0001"/>
+        <mesh filename="package://gazebo_sim/meshes/head.stl" scale="0.0001 0.0001 0.0001"/>
       </geometry>
       <material name="skin">
         <color rgba="0.9 0.7 0.6 1.0"/>

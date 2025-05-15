@@ -6,7 +6,7 @@ from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-    pkg_path = get_package_share_directory('vr_sim')
+    pkg_path = get_package_share_directory('gazebo_sim')
     urdf_path = os.path.join(pkg_path, 'urdf', 'head.urdf')
     world_path = os.path.join(pkg_path, 'worlds', 'cafe.world')
 
@@ -42,7 +42,7 @@ def generate_launch_description():
         ),
 
         Node(
-            package='vr_sim',
+            package='gazebo_sim',
             executable='sphere_mover',
             name='sphere_mover',
             output='screen'
