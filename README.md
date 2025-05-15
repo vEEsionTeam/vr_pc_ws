@@ -29,7 +29,7 @@ self.declare_parameter('server_ip', '192.168.x.x')
 ```
 #### 🌐 Run Client Communication
 ```sh
-./vr_scripts/client.sh
+../vr_scripts/tf_client.py --ros-args -p server_port:=5005 -p server_ip:=192.168. 
 ```
 #### 🧠 Run OpenVINS
 ```sh
@@ -51,7 +51,7 @@ ros2 run tf_server tf_server --ros-args -p server_ip:=192.168.
 ```sh
 cd ~/gazebo_ws
 source install/setup.bash
-ros2 launch vr_sim rviz.launch.py
+ros2 launch rviz_sim rviz.launch.py
 ```
 #### 🏞️ Launch Gazebo Environment
 ```sh
