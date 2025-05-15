@@ -42,23 +42,18 @@ ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p top
 ### 💻 On Host Computer — 3 Terminals
 #### 🛰️ Start Server Communication
 ```sh
-cd ~/vr_pc_ws
-source install/setup.bash
-ros2 run tf_server tf_server2 --ros-args -p img_enable:=1 -p path_enable:=0 -p points_enable:=0  -p server_ip:=192.168. 
+./server.sh --img 0 --path 0 --points 0 --ip 192.168. 
 ```
 !!! CHANGE SERVER_IP
 #### 🖼️ Run RViz
 ```sh
-cd ~/vr_pc_ws
-source install/setup.bash
-ros2 launch rviz_sim rviz.launch.py
+./rviz.sh
 ```
 #### 🏞️ Launch Gazebo Environment
 ```sh
-cd ~/vr_pc_ws
-source install/setup.bash
-ros2 launch vr_sim gazebo.launch.py
+./gazebo.sh
 ```
+
 #### 📝 Notes
 Make sure all ROS 2 packages are built using:
 ```sh
