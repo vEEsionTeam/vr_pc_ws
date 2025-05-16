@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>435</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>201</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_connect">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>181</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_rpi_ip">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RPI IP :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_rpi_status">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Status :</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_cam">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Camera:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_imu">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IMU:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_client">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Client:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_play">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>51</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Play:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_run_cam">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stop_cam">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>100</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_run_imu">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>130</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stop_imu">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>130</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_run_client">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>160</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stop_client">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>160</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_run_play">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>190</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stop_play">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>190</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>201</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_pc_ip">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PC IP :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pc_status">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Status :</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_points">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Points</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_img">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Img</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_path">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>70</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Path</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_server">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Server:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_gazebo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gazebo:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_run_server">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>100</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_rviz">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rviz:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stop_server">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>100</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_run_rviz">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>130</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stop_rviz">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>130</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_run_gazebo">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>160</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RUN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stop_gazebo">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>160</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_worlds">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>190</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Cafe</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Office</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lab</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_worlds">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Worlds:</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>411</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab_algorithm">
+     <attribute name="title">
+      <string>Algorithm</string>
+     </attribute>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>381</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_camimu">
+     <attribute name="title">
+      <string>Camera and IMU</string>
+     </attribute>
+     <widget class="QTextBrowser" name="textBrowser_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>31</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>31</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Camera terminal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>IMU terminal</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_comm">
+     <attribute name="title">
+      <string>Communication</string>
+     </attribute>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Client terminal</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>31</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>31</y>
+        <width>181</width>
+        <height>181</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Server terminal</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>435</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
