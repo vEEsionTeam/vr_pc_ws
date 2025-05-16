@@ -25,7 +25,7 @@ ssh veesion@192.168.1.84
 ```
 #### 💻🛰️ Start Server Communication
 ```sh
-./pc_scripts/server.sh --img 0 --path 0 --points 0 --ip 192.168. 
+./pc_scripts/server.sh --img 1 --path 0 --points 0 --ip 192.168. 
 ```
 !!! CHANGE SERVER_IP
 
