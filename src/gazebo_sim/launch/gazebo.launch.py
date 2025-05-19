@@ -1,26 +1,38 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, ExecuteProcess
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
     pkg_path = get_package_share_directory('gazebo_sim')
+    
+    # Launch argument for world name
+    world_arg = DeclareLaunchArgument(
+        'world',
+        default_value='Cafe.world',
+        description='Name of the world file inside the worlds directory'
+    )
+    world = LaunchConfiguration('world')
+    
     urdf_path = os.path.join(pkg_path, 'urdf', 'head.urdf')
-    world_path = os.path.join(pkg_path, 'worlds', 'cafe.world')
+    world_path = [os.path.join(pkg_path, 'worlds'), world]  # dynamic path using LaunchConfiguration
 
     return LaunchDescription([
+        world_arg,
+
         ExecuteProcess(
             cmd=[
-                'gazebo', world_path,
+                'gazebo',
+                world_path,
                 '--verbose',
                 '-s', 'libgazebo_ros_factory.so',
                 '-s', 'libgazebo_ros_init.so'
             ],
             output='screen'
         ),
-        # Robot state publisher (so TFs and frames are published)
+
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -32,11 +44,11 @@ def generate_launch_description():
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
-            arguments=['-entity', 'head_model', '-file', urdf_path,
+            arguments=[
+                '-entity', 'head_model',
+                '-file', urdf_path,
                 '-x', '0', '-y', '0', '-z', '1.5',
-                #'-R', '0', '-P', '0', '-Y', '-1.5708'  # 180 degrees in radians
-                '-R', '0', '-P', '0', '-Y', '1.5708'  # 180 degrees in radians          
-                       
+                '-R', '0', '-P', '0', '-Y', '1.5708'
             ],
             output='screen'
         ),
@@ -54,7 +66,4 @@ def generate_launch_description():
             name='vr_node',
             output='screen'
         )
-
     ])
-
-

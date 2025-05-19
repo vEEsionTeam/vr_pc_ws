@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>435</width>
-    <height>570</height>
+    <width>430</width>
+    <height>608</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>50</y>
       <width>201</width>
       <height>251</height>
      </rect>
@@ -249,7 +249,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>10</y>
+      <y>50</y>
       <width>201</width>
       <height>251</height>
      </rect>
@@ -505,131 +505,111 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>270</y>
+      <y>310</y>
       <width>411</width>
       <height>251</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab_algorithm">
      <attribute name="title">
-      <string>Algorithm</string>
+      <string>Main</string>
      </attribute>
      <widget class="QTextBrowser" name="textBrowser">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>10</y>
-        <width>381</width>
-        <height>192</height>
+        <width>401</width>
+        <height>201</height>
        </rect>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_camimu">
      <attribute name="title">
-      <string>Camera and IMU</string>
+      <string>Cam</string>
      </attribute>
-     <widget class="QTextBrowser" name="textBrowser_5">
+     <widget class="QTextBrowser" name="textBrowser_4">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>31</y>
-        <width>181</width>
-        <height>181</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_6">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>31</y>
-        <width>181</width>
-        <height>181</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_19">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
+        <x>0</x>
         <y>10</y>
-        <width>121</width>
-        <height>17</height>
+        <width>401</width>
+        <height>201</height>
        </rect>
-      </property>
-      <property name="text">
-       <string>Camera terminal</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_20">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>10</y>
-        <width>111</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>IMU terminal</string>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_comm">
      <attribute name="title">
-      <string>Communication</string>
+      <string>IMU</string>
      </attribute>
-     <widget class="QLabel" name="label_22">
+     <widget class="QTextBrowser" name="textBrowser_5">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>0</x>
         <y>10</y>
-        <width>111</width>
-        <height>17</height>
+        <width>401</width>
+        <height>201</height>
        </rect>
-      </property>
-      <property name="text">
-       <string>Client terminal</string>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_8">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>31</y>
-        <width>181</width>
-        <height>181</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_7">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>31</y>
-        <width>181</width>
-        <height>181</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>121</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Server terminal</string>
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Server</string>
+     </attribute>
+     <widget class="QTextBrowser" name="textBrowser_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>401</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Client</string>
+     </attribute>
+     <widget class="QTextBrowser" name="textBrowser_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>401</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeMono</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>vEEsion VR System</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -637,7 +617,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>435</width>
+     <width>430</width>
      <height>22</height>
     </rect>
    </property>
