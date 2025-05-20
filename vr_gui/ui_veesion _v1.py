@@ -1,8 +1,7 @@
-
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'veesionOmChCR.ui'
+## Form generated from reading UI file 'veesionDpBCfq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.3
 ##
@@ -17,14 +16,13 @@ from PySide2.QtWidgets import *
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
-            MainWindow.setObjectName(u"vEEsionGUI")
-        MainWindow.resize(424, 638)
-        MainWindow.setWindowIcon(QIcon("logo.png"))
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(430, 608)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.frame = QFrame(self.centralwidget)
         self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(10, 80, 201, 251))
+        self.frame.setGeometry(QRect(10, 50, 201, 251))
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.pushButton_connect = QPushButton(self.frame)
@@ -35,37 +33,25 @@ class Ui_MainWindow(object):
         self.textEdit.setGeometry(QRect(60, 10, 131, 21))
         self.label_rpi_ip = QLabel(self.frame)
         self.label_rpi_ip.setObjectName(u"label_rpi_ip")
-        self.label_rpi_ip.setGeometry(QRect(10, 10, 51, 17))
-        self.label_rpi_ip.setFont(QFont("Ubuntu", 11))
-        self.label_rpi_ip.setStyleSheet("color: #03194d; font-weight: bold;")  
+        self.label_rpi_ip.setGeometry(QRect(10, 10, 101, 17))
         self.label_rpi_status = QLabel(self.frame)
         self.label_rpi_status.setObjectName(u"label_rpi_status")
-        self.label_rpi_status.setGeometry(QRect(10, 70, 55, 17))
-        self.label_rpi_status.setFont(QFont("Ubuntu", 11))
-        self.label_rpi_status.setStyleSheet("color: #03194d; font-weight: bold;")  
+        self.label_rpi_status.setGeometry(QRect(10, 70, 81, 17))
         self.textBrowser_2 = QTextBrowser(self.frame)
         self.textBrowser_2.setObjectName(u"textBrowser_2")
         self.textBrowser_2.setGeometry(QRect(70, 70, 121, 21))
         self.label_cam = QLabel(self.frame)
         self.label_cam.setObjectName(u"label_cam")
-        self.label_cam.setGeometry(QRect(10, 100, 61, 17))
-        self.label_cam.setFont(QFont("Ubuntu", 11))
-        self.label_cam.setStyleSheet("color: #03194d; font-weight: bold;")  
+        self.label_cam.setGeometry(QRect(10, 100, 71, 17))
         self.label_imu = QLabel(self.frame)
         self.label_imu.setObjectName(u"label_imu")
         self.label_imu.setGeometry(QRect(10, 130, 71, 17))
-        self.label_imu.setFont(QFont("Ubuntu", 11))
-        self.label_imu.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.label_client = QLabel(self.frame)
         self.label_client.setObjectName(u"label_client")
         self.label_client.setGeometry(QRect(10, 160, 71, 17))
-        self.label_client.setFont(QFont("Ubuntu", 11))
-        self.label_client.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.label_play = QLabel(self.frame)
         self.label_play.setObjectName(u"label_play")
         self.label_play.setGeometry(QRect(10, 190, 51, 17))
-        self.label_play.setFont(QFont("Ubuntu", 11))
-        self.label_play.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.pb_run_cam = QPushButton(self.frame)
         self.pb_run_cam.setObjectName(u"pb_run_cam")
         self.pb_run_cam.setGeometry(QRect(70, 100, 51, 25))
@@ -92,19 +78,15 @@ class Ui_MainWindow(object):
         self.pb_stop_play.setGeometry(QRect(120, 190, 51, 25))
         self.frame_2 = QFrame(self.centralwidget)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setGeometry(QRect(220, 80, 201, 251))
+        self.frame_2.setGeometry(QRect(220, 50, 201, 251))
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.label_pc_ip = QLabel(self.frame_2)
         self.label_pc_ip.setObjectName(u"label_pc_ip")
         self.label_pc_ip.setGeometry(QRect(10, 10, 51, 20))
-        self.label_pc_ip.setFont(QFont("Ubuntu", 11))
-        self.label_pc_ip.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.label_pc_status = QLabel(self.frame_2)
         self.label_pc_status.setObjectName(u"label_pc_status")
         self.label_pc_status.setGeometry(QRect(10, 40, 81, 17))
-        self.label_pc_status.setFont(QFont("Ubuntu", 11))
-        self.label_pc_status.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.checkBox_points = QCheckBox(self.frame_2)
         self.checkBox_points.setObjectName(u"checkBox_points")
         self.checkBox_points.setGeometry(QRect(120, 70, 81, 23))
@@ -117,21 +99,15 @@ class Ui_MainWindow(object):
         self.label_server = QLabel(self.frame_2)
         self.label_server.setObjectName(u"label_server")
         self.label_server.setGeometry(QRect(10, 100, 71, 17))
-        self.label_server.setFont(QFont("Ubuntu", 11))
-        self.label_server.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.label_gazebo = QLabel(self.frame_2)
         self.label_gazebo.setObjectName(u"label_gazebo")
         self.label_gazebo.setGeometry(QRect(10, 160, 71, 17))
-        self.label_gazebo.setFont(QFont("Ubuntu", 11))
-        self.label_gazebo.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.pb_run_server = QPushButton(self.frame_2)
         self.pb_run_server.setObjectName(u"pb_run_server")
         self.pb_run_server.setGeometry(QRect(90, 100, 51, 25))
         self.label_rviz = QLabel(self.frame_2)
         self.label_rviz.setObjectName(u"label_rviz")
         self.label_rviz.setGeometry(QRect(10, 130, 71, 17))
-        self.label_rviz.setFont(QFont("Ubuntu", 11))
-        self.label_rviz.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.pb_stop_server = QPushButton(self.frame_2)
         self.pb_stop_server.setObjectName(u"pb_stop_server")
         self.pb_stop_server.setGeometry(QRect(140, 100, 51, 25))
@@ -156,19 +132,15 @@ class Ui_MainWindow(object):
         self.label_worlds = QLabel(self.frame_2)
         self.label_worlds.setObjectName(u"label_worlds")
         self.label_worlds.setGeometry(QRect(10, 190, 67, 17))
-        self.label_worlds.setFont(QFont("Ubuntu", 11))
-        self.label_worlds.setStyleSheet("color: #03194d; font-weight: bold;")  
         self.textBrowser_3 = QTextBrowser(self.frame_2)
         self.textBrowser_3.setObjectName(u"textBrowser_3")
-        self.textBrowser_3.setGeometry(QRect(65, 40, 125, 21))
-        self.textBrowser_3.setText("Closed")
-
+        self.textBrowser_3.setGeometry(QRect(60, 40, 131, 21))
         self.textEdit_2 = QTextEdit(self.frame_2)
         self.textEdit_2.setObjectName(u"textEdit_2")
         self.textEdit_2.setGeometry(QRect(60, 10, 131, 21))
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setGeometry(QRect(10, 340, 411, 251))
+        self.tabWidget.setGeometry(QRect(10, 310, 411, 251))
         self.tab_algorithm = QWidget()
         self.tab_algorithm.setObjectName(u"tab_algorithm")
         self.textBrowser = QTextBrowser(self.tab_algorithm)
@@ -200,47 +172,19 @@ class Ui_MainWindow(object):
         self.textBrowser_7.setGeometry(QRect(0, 10, 401, 201))
         self.tabWidget.addTab(self.tab_2, "")
         self.label = QLabel(self.centralwidget)
-
-        self.logo_label = QLabel(self.centralwidget)
-        self.logo_label.setGeometry(QRect(15, 5, 70, 70))  # Adjust size and position
-        self.logo_label.setPixmap(QPixmap("logo.png").scaled(70, 65, Qt.KeepAspectRatio, Qt.SmoothTransformation))
-        self.logo_label.setFixedSize(70, 65)
-
-
-        self.logo_label.setScaledContents(True)
-
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(100, 30, 321, 41))
+        self.label.setGeometry(QRect(70, 0, 311, 41))
         font = QFont()
-        font.setFamily(u"Saab")
-        font.setPointSize(12)
+        font.setFamily(u"FreeMono")
+        font.setPointSize(20)
         font.setBold(True)
         font.setItalic(False)
         font.setWeight(75)
         self.label.setFont(font)
-        self.label.setStyleSheet("color: #0997B1;")  # Turquesa blue
-
-        self.label_2 = QLabel(self.centralwidget)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(100, 0, 321, 41))
-        font1 = QFont()
-        font1.setFamily(u"Saab")
-        font1.setPointSize(14)
-        font1.setBold(True)
-        font1.setItalic(False)
-        font1.setWeight(75)
-        self.label_2.setFont(font1)
-        self.label_2.setStyleSheet("color: #03194d;")  # Dark blue
-
         MainWindow.setCentralWidget(self.centralwidget)
-        self.tabWidget.raise_()
-        self.frame.raise_()
-        self.frame_2.raise_()
-        self.label.raise_()
-        self.label_2.raise_()
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 443, 22))
+        self.menubar.setGeometry(QRect(0, 0, 430, 22))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -248,14 +192,14 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"vEEsionGUI", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.pushButton_connect.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
         self.label_rpi_ip.setText(QCoreApplication.translate("MainWindow", u"RPI IP :", None))
         self.label_rpi_status.setText(QCoreApplication.translate("MainWindow", u"Status :", None))
@@ -295,151 +239,7 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_comm), QCoreApplication.translate("MainWindow", u"IMU", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Server", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Client", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Visual-Inertial Navigation GUI", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"VR Headset", None))
-
-        self.frame.setStyleSheet("""
-            QFrame#frame {
-                background-color: transparent;
-                border: 1px solid #03194d; /* Dark blue border */
-                border-radius: 10px;
-            }
-        """)
-    
-        self.frame_2.setStyleSheet("""
-            QFrame#frame_2 {
-                background-color: transparent;
-                border: 1px solid #03194d; /* Dark blue border */
-                border-radius: 10px;
-            }
-        """)
-        self.tabWidget.setStyleSheet("""
-            QTabWidget::pane {
-                border: 1px solid #03194d;
-                border-radius: 10px;
-                padding: 5px;
-            }
-
-            QTabBar::tab {
-                background: #ffffff;
-                border: 1px solid #03194d;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                padding: 5px 10px;
-                margin-right: 2px;
-            }
-
-            QTabBar::tab:selected {
-                background: #03194d;     /* Navy blue background */
-                color: white;            /* White text */
-            }
-
-            QTabBar::tab:!selected {
-                background: #f9f9f9;
-                color: #777777;
-            }
-        """)
-        button_style = """
-        QPushButton {
-            background-color: #03194d;
-            color: white;
-            border: 1px solid #03194d;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        QPushButton:hover:enabled {
-            background-color: #062670;
-        }
-
-        QPushButton:pressed:enabled {
-            background-color: #021134;
-        }
-
-        QPushButton:disabled {
-            background-color: #4a5a78;
-            color: #F5F5F5	;
-            border: 1px solid #aaaaaa;
-        }
-        """
-
-
-        # Example:
-        self.pb_run_cam.setStyleSheet(button_style)
-        self.pb_stop_cam.setStyleSheet(button_style)
-        self.pb_run_imu.setStyleSheet(button_style)
-        self.pb_stop_imu.setStyleSheet(button_style)
-        self.pb_run_client.setStyleSheet(button_style)
-        self.pb_stop_client.setStyleSheet(button_style)
-        self.pb_run_play.setStyleSheet(button_style)
-        self.pb_stop_play.setStyleSheet(button_style)
-        self.pb_run_server.setStyleSheet(button_style)
-        self.pb_stop_server.setStyleSheet(button_style)
-        self.pb_run_rviz.setStyleSheet(button_style)
-        self.pb_stop_rviz.setStyleSheet(button_style)
-        self.pb_run_gazebo.setStyleSheet(button_style)
-        self.pb_stop_gazebo.setStyleSheet(button_style)
-        self.pushButton_connect.setStyleSheet(button_style)
-        checkbox_style = """
-        QCheckBox {
-            color: #03194d;
-            font-weight: bold;
-            spacing: 5px;
-        }
-        """
-        # Apply to all checkboxes
-        self.checkBox_points.setStyleSheet(checkbox_style)
-        self.checkBox_img.setStyleSheet(checkbox_style)
-        self.checkBox_path.setStyleSheet(checkbox_style)
-
-
-        self.comboBox_worlds.setStyleSheet("""
-        QComboBox {
-            background-color: #ffffff;
-            color: #03194d;  /* This changes the text color of the selected item */
-            border: 1px solid #03194d;
-            border-radius: 5px;
-            padding: 2px 10px;
-        }
-
-        QComboBox::drop-down {
-            border-left: 1px solid #03194d;
-            width: 20px;
-        }
-
-        QComboBox QAbstractItemView {
-            background-color: #ffffff;
-            selection-background-color: #03194d;
-            selection-color: white;
-        }
-        """)
-        self.textEdit.setStyleSheet("""
-            color: #03194d;         
-            font-family: Ubuntu;     
-            font-size: 12pt;        
-        """)
-
-        self.textEdit_2.setStyleSheet("""
-            color: #03194d;
-            font-family: Ubuntu;
-            font-size: 12pt;
-        """)
-        self.textBrowser_2.setStyleSheet("""
-            color: #03194d;         
-            font-family: Ubuntu;     
-            font-size: 11pt;        
-            background-color: #ffffff; 
-        """)
-
-        self.textBrowser_3.setStyleSheet("""
-            color: #03194d;
-            font-family: Ubuntu;
-            font-size: 11pt;
-            background-color: #ffffff;
-        """)
-
-
+        self.label.setText(QCoreApplication.translate("MainWindow", u"vEEsion VR System", None))
     # retranslateUi
-
 
 

@@ -648,7 +648,7 @@ class MainWindow(QMainWindow):
             return
         
         # Create and start new Gazebo process with selected world
-        command = f"cd ~/vr_pc_ws && source install/setup.bash && ros2 launch gazebo_sim gazebo.launch.py world:={selected_world}"
+        command = f"./pc_scripts/gazebo.sh"
         self.gazebo_process = LocalProcessWorker(command)
         self.gazebo_process.output.connect(lambda msg: self.append_to_log(msg, "Gazebo"))
         self.gazebo_process.error.connect(lambda msg: self.append_to_log(f"Error: {msg}", "Gazebo"))

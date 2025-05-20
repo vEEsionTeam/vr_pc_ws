@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>430</width>
-    <height>608</height>
+    <width>424</width>
+    <height>638</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
+      <y>80</y>
       <width>201</width>
       <height>251</height>
      </rect>
@@ -249,7 +249,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>50</y>
+      <y>80</y>
       <width>201</width>
       <height>251</height>
      </rect>
@@ -505,7 +505,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>310</y>
+      <y>340</y>
       <width>411</width>
       <height>251</height>
      </rect>
@@ -592,32 +592,59 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>0</y>
-      <width>311</width>
+      <x>100</x>
+      <y>30</y>
+      <width>321</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>FreeMono</family>
-      <pointsize>20</pointsize>
+      <family>Saab</family>
+      <pointsize>12</pointsize>
       <weight>75</weight>
       <italic>false</italic>
       <bold>true</bold>
      </font>
     </property>
     <property name="text">
-     <string>vEEsion VR System</string>
+     <string>Visual-Inertial Navigation GUI</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Saab</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>VR System</string>
+    </property>
+   </widget>
+   <zorder>tabWidget</zorder>
+   <zorder>frame</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>430</width>
+     <width>424</width>
      <height>22</height>
     </rect>
    </property>
