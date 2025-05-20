@@ -1,3 +1,12 @@
+# ▶️ Run the GUI
+Navigate to the GUI directory 
+```sh
+cd ~/vr_pc_ws/vr_gui
+```
+and run 
+```sh
+python3 main.py
+```
 # 🕶️ VR System Setup Guide (Raspberry Pi + Host Computer)
 
 ## 🔌 Wired/Wireless Configuration
