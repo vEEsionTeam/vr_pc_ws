@@ -4,6 +4,7 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 import os
+from launch.substitutions import PathJoinSubstitution
 
 def generate_launch_description():
     pkg_path = get_package_share_directory('gazebo_sim')
@@ -11,13 +12,18 @@ def generate_launch_description():
     # Launch argument for world name
     world_arg = DeclareLaunchArgument(
         'world',
-        default_value='Cafe.world',
+        default_value='Warehouse.world',
         description='Name of the world file inside the worlds directory'
     )
     world = LaunchConfiguration('world')
     
     urdf_path = os.path.join(pkg_path, 'urdf', 'head.urdf')
-    world_path = [os.path.join(pkg_path, 'worlds'), world]  # dynamic path using LaunchConfiguration
+    
+    world_path = PathJoinSubstitution([
+        pkg_path,
+        'worlds',
+        world
+    ])
 
     return LaunchDescription([
         world_arg,
@@ -48,7 +54,9 @@ def generate_launch_description():
                 '-entity', 'head_model',
                 '-file', urdf_path,
                 '-x', '0', '-y', '0', '-z', '1.5',
-                '-R', '0', '-P', '0', '-Y', '1.5708'
+                '-R', '3.1416',  # 180 degrees in radians
+                '-P', '0',
+                '-Y', '0'
             ],
             output='screen'
         ),

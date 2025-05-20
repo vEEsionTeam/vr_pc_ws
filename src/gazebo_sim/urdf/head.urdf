@@ -9,7 +9,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
       <geometry>
-        <mesh filename="package://gazebo_sim/meshes/head.stl" scale="0.0001 0.0001 0.0001"/>
+        <mesh filename="/home/zulal/vr_pc_ws/src/gazebo_sim/meshes/head.stl" scale="0.0001 0.0001 0.0001"/>
       </geometry>
     </visual>
 
