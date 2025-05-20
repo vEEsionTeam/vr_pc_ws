@@ -437,6 +437,20 @@ class Ui_MainWindow(object):
             font-size: 11pt;
             background-color: #ffffff;
         """)
+        style = """
+            color: #03194d;
+            background-color: #ffffff;
+            border: 1px solid #03194d;
+            border-radius: 10px;
+            padding: 5px;
+        """
+
+        self.textBrowser.setStyleSheet(style)
+        self.textBrowser_4.setStyleSheet(style)
+        self.textBrowser_5.setStyleSheet(style)
+        self.textBrowser_6.setStyleSheet(style)
+        self.textBrowser_7.setStyleSheet(style)
+
 
 
     # retranslateUi
