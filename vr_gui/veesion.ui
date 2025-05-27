@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>424</width>
-    <height>638</height>
+    <height>928</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -633,11 +633,156 @@
      <string>VR System</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pb_test1_get">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>610</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Get Status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_test1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Test1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_test1_delete">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>610</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_test1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>640</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_test2_delete">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>710</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_test2_get">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>710</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Get Status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_test2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>707</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Test2</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_test2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>740</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_test_difference">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>800</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Difference</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_test_result">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>830</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_testresult">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>800</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Result</string>
+    </property>
+   </widget>
    <zorder>tabWidget</zorder>
    <zorder>frame</zorder>
    <zorder>frame_2</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
+   <zorder>pb_test1_get</zorder>
+   <zorder>label_test1</zorder>
+   <zorder>pb_test1_delete</zorder>
+   <zorder>textBrowser_test1</zorder>
+   <zorder>pb_test2_delete</zorder>
+   <zorder>pb_test2_get</zorder>
+   <zorder>label_test2</zorder>
+   <zorder>textBrowser_test2</zorder>
+   <zorder>pb_test_difference</zorder>
+   <zorder>textBrowser_test_result</zorder>
+   <zorder>label_testresult</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
