@@ -1,6 +1,8 @@
 # VR Tracking System
 
-This repository provides a GUI setup and ROS 2 Humble & Gazebo based simulation for a VR tracking system. It includes a custom head-mounted model for Gazebo and a Python GUI for launching tracking components on a Raspberry Pi via SSH.
+This repository includes the **PC-side** components of the VR tracking system, providing a GUI setup and ROS 2 Humble & Gazebo based simulation with a custom head-mounted model for Gazebo and a Python GUI to launch tracking components via SSH.
+
+To run the project successfully, you also need to run the companion **[vr_rpi_ws](https://github.com/vEEsionTeam/vr_rpi_ws)** repository on a Raspberry Pi equipped with a camera and IMU.
 
 You can watch the project video here: [https://youtu.be/1OSWoaaN1xk?si=DFQOnIu5OELyaWig](https://youtu.be/1OSWoaaN1xk?si=DFQOnIu5OELyaWig)
 
