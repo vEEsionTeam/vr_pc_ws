@@ -1,3 +1,58 @@
+# VR Tracking System
+
+This repository includes the **PC-side** components of the VR tracking system, providing a GUI setup and ROS 2 Humble & Gazebo based simulation with a custom head-mounted model for Gazebo and a Python GUI to launch tracking components via SSH.
+
+To run the project successfully, you also need to run the companion **[vr_rpi_ws](https://github.com/vEEsionTeam/vr_rpi_ws)** repository on a Raspberry Pi equipped with a camera and IMU.
+
+You can watch the project video here: [https://youtu.be/1OSWoaaN1xk?si=DFQOnIu5OELyaWig](https://youtu.be/1OSWoaaN1xk?si=DFQOnIu5OELyaWig)
+
+---
+
+## ✅ Requirements
+
+- ROS 2 Humble installed and sourced
+- Gazebo
+- Python 3 with PyQt5 for the GUI
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone this repository
+
+```sh
+git clone https://github.com/vEEsionTeam/vr_pc_ws.git
+cd vr_pc_ws
+```
+
+### 2. Update the URDF mesh path
+Edit the mesh path in the URDF file:
+```sh
+cd src/gazebo_sim/urdf
+nano head.urdf
+```
+Replace the mesh path line with your absolute path:
+```xml
+<mesh filename="/absolute/path/to/vr_pc_ws/src/gazebo_sim/meshes/head.stl" scale="0.0001 0.0001 0.0001"/>
+```
+### 3. Build the workspace
+
+```sh
+cd ~/vr_pc_ws
+colcon build
+source install/setup.bash
+```
+### 4. Set GAZEBO_MODEL_PATH
+To use the custom models in Gazebo, add the following line to the end of your ~/.bashrc file:
+```sh
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/absolute/path/to/vr_pc_ws/src/gazebo_sim/models
+```
+
+Then apply the changes:
+```sh
+source ~/.bashrc
+```
+
 # ▶️ Run the GUI
 Navigate to the GUI directory 
 ```sh
@@ -7,85 +62,8 @@ and run
 ```sh
 python3 main.py
 ```
-# 🕶️ VR System Setup Guide (Raspberry Pi + Host Computer)
 
-## 🔌 Wired/Wireless Configuration
-
-### SSH into Raspberry Pi
-Check the RPI IP
-```sh
-ssh veesion@192.168.1.2
-```
-or 
-```sh
-ssh veesion@192.168.1.84
-```
-## Terminal Launch Instructions (7 Terminals Total)
-### 🍓 On Raspberry Pi — 4 Terminals
-### 💻 On Host Computer — 3 Terminals
-
-#### 🍓📷 Run Camera Node
-```sh
-./vr_scripts/camera.sh
-```
-#### 🍓📡 Run IMU Node
-```sh
-./vr_scripts/imu.sh
-```
-#### 💻🛰️ Start Server Communication
-```sh
-./pc_scripts/server.sh --img 1 --path 0 --points 0 --ip 192.168. 
-```
-!!! CHANGE SERVER_IP
-
-#### 🍓🌐 Run Client Communication
-```sh
-./vr_scripts/tf_client.py --ros-args -p img_enable:=1 -p path_enable:=0 -p points_enable:=0 -p server_ip:=192.168.   
-```
-!!! CHANGE SERVER_IP
-Check the IP address on the server:
-```sh
-hostname -I
-```
-
-#### 💻🖼️ Run RViz
-```sh
-./pc_scripts/rviz.sh
-```
-#### 💻🏞️ Launch Gazebo Environment
-```sh
-./pc_scripts/gazebo.sh
-```
-
-#### 🍓🧠 Run OpenVINS
-```sh
-./vr_scripts/openvins.sh
-```
 
 ### 📝 Notes
-
-#### 🍓 Path Recording
-```sh
-ros2 run ov_eval pose_to_file_ros2 --ros-args -p topic:=/ov_msckf/odomimu -p topic_type:=Odometry -p output:=/home/veesion/veesion_ws/path_recording/test1.txt
-```
-
-Make sure all ROS 2 packages are built after any change:
-```sh
-colcon build
-```
-Always source the workspace before running any ROS 2 commands:
-```sh
-source install/setup.bash
-```
-
-Consider using terminal multiplexers like terminator for efficient multi-terminal management.
-#### 💻 Copy a file form RPI to PC
-```sh
-scp veesion@192.168.1.2:/home/veesion/veesion_ws/path_recording/testx1.txt ~/Desktop/paths/
-```
-#### Additional Commands
-```sh
-ros2 launch ov_msckf veesion1.launch.py config:=veesion3 rviz_enable:=false
-```
-
-
+- Make sure all ROS2 packages are built after any change.
+- Always source the workspace before running any ROS 2 commands.
