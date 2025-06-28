@@ -14222,6 +14222,9 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>-1.70268 3.77005 0 0 -0 0</pose>
     </model>
+    
+    
     <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so"/>
+
   </world>
 </sdf>

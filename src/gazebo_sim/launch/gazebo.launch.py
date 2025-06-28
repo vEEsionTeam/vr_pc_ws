@@ -12,7 +12,7 @@ def generate_launch_description():
     # Launch argument for world name
     world_arg = DeclareLaunchArgument(
         'world',
-        default_value='Warehouse.world',
+        default_value='Office.world',
         description='Name of the world file inside the worlds directory'
     )
     world = LaunchConfiguration('world')

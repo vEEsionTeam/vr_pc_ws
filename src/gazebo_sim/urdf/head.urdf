@@ -23,7 +23,7 @@
 
   <gazebo reference="head_link">
     <gravity>false</gravity>
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Orange</material>
   </gazebo>
 
   <!-- Camera link (child of head_link) -->

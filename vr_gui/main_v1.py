@@ -9,6 +9,116 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 import signal
 import re
+import rclpy
+from rclpy.node import Node
+from tf2_ros import Buffer, TransformListener, LookupException, ConnectivityException, ExtrapolationException
+from geometry_msgs.msg import TransformStamped
+import math
+from transforms3d import euler
+
+class TFListenerNode(Node):
+    def __init__(self):
+        super().__init__('tf_listener')
+        self.buffer = Buffer()
+        self.listener = TransformListener(self.buffer, self)
+        self.transform_data = None
+        self.transform_ready = False
+
+    def get_transform(self):
+        try:
+            # Try multiple times with a small delay
+            for attempt in range(10):  # Try 10 times
+                self.get_logger().info(f"Attempt {attempt + 1} to get transform")
+                
+                try:
+                    # Get the transform with timeout
+                    trans = self.buffer.lookup_transform(
+                        'global',  # target frame
+                        'imu',     # source frame
+                        rclpy.time.Time(),
+                        rclpy.duration.Duration(seconds=0.1)  # timeout after 0.1 seconds
+                    )
+                    
+                    self.get_logger().info("Successfully got transform")
+                    
+                    t = trans.transform.translation
+                    r = trans.transform.rotation
+                    
+                    # Calculate distance
+                    dist = math.sqrt(t.x*t.x + t.y*t.y + t.z*t.z)
+                    
+                    # Convert quaternion to euler angles
+                    roll, pitch, yaw = self.quaternion_to_euler(r.x, r.y, r.z, r.w)
+                    
+                    # Store the transform data
+                    self.transform_data = {
+                        'translation': (t.x, t.y, t.z),
+                        'distance': dist,
+                        'rotation': (math.degrees(roll), math.degrees(pitch), math.degrees(yaw))
+                    }
+                    self.transform_ready = True
+                    return True
+                    
+                except Exception as e:
+                    self.get_logger().warn(f"Transform lookup failed on attempt {attempt + 1}: {str(e)}")
+                    time.sleep(0.1)
+                    continue
+            
+            self.get_logger().warn("Transform not available after multiple attempts")
+            return False
+            
+        except Exception as e:
+            self.get_logger().warn(f"Transform not available: {e}")
+            return False
+
+    @staticmethod
+    def quaternion_to_euler(qx, qy, qz, qw):
+        # roll (x-axis rotation)
+        sinr_cosp = 2.0 * (qx * qy + qw * qz)
+        cosr_cosp = qw * qw + qx * qx - qy * qy - qz * qz
+        roll = math.atan2(sinr_cosp, cosr_cosp)
+        
+        # pitch (y-axis rotation)
+        sinp = -2.0 * (qx * qz - qw * qy)
+        pitch = math.asin(sinp)
+        
+        # yaw (z-axis rotation)
+        siny_cosp = 2.0 * (qy * qz + qw * qx)
+        cosy_cosp = qw * qw - qx * qx - qy * qy + qz * qz
+        yaw = math.atan2(siny_cosp, cosy_cosp)
+        
+        return roll, pitch, yaw
+
+class TFListenerWorker(QThread):
+    transform_ready = Signal(dict)
+    error = Signal(str)
+
+    def __init__(self):
+        super().__init__()
+        self.node = None
+
+    def run(self):
+        try:
+            rclpy.init()
+            self.node = TFListenerNode()
+            
+            # Spin the node once to ensure it's ready
+            executor = rclpy.executors.SingleThreadedExecutor()
+            executor.add_node(self.node)
+            executor.spin_once(timeout_sec=0.1)
+            
+            # Try to get transform
+            if self.node.get_transform():
+                self.transform_ready.emit(self.node.transform_data)
+            else:
+                self.error.emit("Failed to get transform after multiple attempts")
+            
+            # Cleanup
+            self.node.destroy_node()
+            rclpy.shutdown()
+            
+        except Exception as e:
+            self.error.emit(str(e))
 
 class LocalProcessWorker(QThread):
     output = Signal(str)
@@ -234,8 +344,8 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         
         # Set default IP addresses
-        self.ui.textEdit.setPlainText("192.168.146.249")  # Default RPI IP
-        self.ui.textEdit_2.setPlainText("192.168.146.223")  # Default server IP
+        self.ui.textEdit.setPlainText("192.168.147.249")  # Default RPI IP
+        self.ui.textEdit_2.setPlainText("192.168.147.223")  # Default server IP
         
         # Initialize SSH connections dictionary
         self.ssh_connections = {}
@@ -248,6 +358,13 @@ class MainWindow(QMainWindow):
         
         # Initialize output timers
         self.output_timers = {}
+        
+        # Store latest TF data for difference calculation
+        self.test1_data = None
+        self.test2_data = None
+        
+        # Initialize ROS2 node and TF listener
+        self.init_ros2()
         
         # Connect signals
         self.ui.pushButton_connect.clicked.connect(self.connect_to_rpi)
@@ -270,6 +387,13 @@ class MainWindow(QMainWindow):
         self.ui.pb_run_gazebo.clicked.connect(self.run_gazebo)
         self.ui.pb_stop_gazebo.clicked.connect(self.stop_gazebo)
         
+        # Connect test buttons
+        self.ui.pb_test1_get.clicked.connect(self.get_tf_data)
+        self.ui.pb_test2_get.clicked.connect(self.get_tf_data2)
+        self.ui.pb_test_difference.clicked.connect(self.calculate_difference)
+        self.ui.pb_test1_delete.clicked.connect(self.clear_test1)
+        self.ui.pb_test2_delete.clicked.connect(self.clear_test2)
+        
         # Initialize status
         self.update_status("Disconnected")
         self.disable_buttons()
@@ -277,6 +401,32 @@ class MainWindow(QMainWindow):
         # Initially disable stop buttons for RViz and Gazebo
         self.ui.pb_stop_rviz.setEnabled(False)
         self.ui.pb_stop_gazebo.setEnabled(False)
+
+    def init_ros2(self):
+        """Initialize ROS2 node and TF listener"""
+        try:
+            rclpy.init()
+            self.node = rclpy.create_node('vr_gui_node')
+            self.tf_buffer = Buffer()
+            self.tf_listener = TransformListener(self.tf_buffer, self.node)
+            
+            # Create executor and add node
+            self.executor = rclpy.executors.SingleThreadedExecutor()
+            self.executor.add_node(self.node)
+            
+            # Start spinning in a separate thread
+            self.spin_thread = QThread()
+            self.spin_thread.run = lambda: self.executor.spin()
+            self.spin_thread.start()
+            
+            self.append_to_log("ROS2 node initialized successfully", "System")
+            
+            # List available topics
+            topics = self.node.get_topic_names_and_types()
+            self.append_to_log(f"Available topics: {topics}", "System")
+            
+        except Exception as e:
+            self.append_to_log(f"Failed to initialize ROS2: {str(e)}", "Error")
 
     def connect_to_rpi(self):
         ip = self.ui.textEdit.toPlainText().strip()
@@ -647,8 +797,11 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "Error", "Please select a world from the dropdown")
             return
         
+        # Append .world extension to the selected world name
+        world_file = f"{selected_world}.world"
+        
         # Create and start new Gazebo process with selected world
-        command = f"./pc_scripts/gazebo.sh"
+        command = f"./pc_scripts/gazebo.sh --world {world_file}"
         self.gazebo_process = LocalProcessWorker(command)
         self.gazebo_process.output.connect(lambda msg: self.append_to_log(msg, "Gazebo"))
         self.gazebo_process.error.connect(lambda msg: self.append_to_log(f"Error: {msg}", "Gazebo"))
@@ -657,7 +810,7 @@ class MainWindow(QMainWindow):
         self.gazebo_process.finished.connect(self.on_gazebo_finished)
         
         self.gazebo_process.start()
-        self.append_to_log(f"Starting Gazebo with world: {selected_world}", "System")
+        self.append_to_log(f"Starting Gazebo with world: {world_file}", "System")
 
     def stop_gazebo(self):
         if self.gazebo_process:
@@ -756,6 +909,193 @@ class MainWindow(QMainWindow):
         # Start the process
         self.server_process.start()
         self.append_to_log("Starting server...", "System")
+
+    def get_tf_data(self):
+        """Get TF data for test1"""
+        try:
+            # Get transform from global to imu using latest available transform
+            transform = self.tf_buffer.lookup_transform(
+                'global',
+                'imu',
+                rclpy.time.Time(seconds=0, nanoseconds=0))  # Use zero time to get latest
+            
+            # Extract translation and rotation
+            translation = transform.transform.translation
+            rotation = transform.transform.rotation
+            
+            # Convert quaternion to Euler angles
+            euler_angles = euler.quat2euler([rotation.w, rotation.x, rotation.y, rotation.z])
+            
+            # Calculate distance
+            distance = math.sqrt(
+                translation.x**2 + 
+                translation.y**2 + 
+                translation.z**2
+            )
+            
+            # Store data
+            data = {
+                'translation': [translation.x, translation.y, translation.z],
+                'rotation': [math.degrees(angle) for angle in euler_angles],
+                'distance': distance
+            }
+            
+            # Update display
+            self.update_tf_display(data)
+            
+        except LookupException as e:
+            self.append_to_log(f"TF lookup failed: {str(e)}", "Error")
+        except ConnectivityException as e:
+            self.append_to_log(f"TF connectivity error: {str(e)}", "Error")
+        except ExtrapolationException as e:
+            self.append_to_log(f"TF extrapolation error: {str(e)}", "Error")
+        except Exception as e:
+            self.append_to_log(f"Error getting TF data: {str(e)}", "Error")
+
+    def update_tf_display(self, data):
+        # Store the data for difference calculation
+        self.test1_data = data
+        
+        # Format the transform data
+        t = data['translation']
+        r = data['rotation']
+        d = data['distance']
+        
+        # Create the display text
+        display_text = f"X: {t[0]:.2f}m "+ ' '
+        display_text += f"Y: {t[1]:.2f}m "+ ' '
+        display_text += f"Z: {t[2]:.2f}m "+ ' '
+        display_text += f"Distance: {d:.2f}m\n"
+        display_text += f"Yaw: {r[2]:.2f}° "+ ' '
+        display_text += f"Pitch: {r[1]:.2f}° "+ ' '
+        display_text += f"Roll: {r[0]:.2f}° "
+        
+        # Update the text browser
+        self.ui.textBrowser_test1.setText(display_text)
+        self.append_to_log("TF data updated", "System")
+
+    def get_tf_data2(self):
+        """Get TF data for test2"""
+        try:
+            # Get transform from global to imu using latest available transform
+            transform = self.tf_buffer.lookup_transform(
+                'global',
+                'imu',
+                rclpy.time.Time(seconds=0, nanoseconds=0))  # Use zero time to get latest
+            
+            # Extract translation and rotation
+            translation = transform.transform.translation
+            rotation = transform.transform.rotation
+            
+            # Convert quaternion to Euler angles
+            euler_angles = euler.quat2euler([rotation.w, rotation.x, rotation.y, rotation.z])
+            
+            # Calculate distance
+            distance = math.sqrt(
+                translation.x**2 + 
+                translation.y**2 + 
+                translation.z**2
+            )
+            
+            # Store data
+            data = {
+                'translation': [translation.x, translation.y, translation.z],
+                'rotation': [math.degrees(angle) for angle in euler_angles],
+                'distance': distance
+            }
+            
+            # Update display
+            self.update_tf_display2(data)
+            
+        except LookupException as e:
+            self.append_to_log(f"TF lookup failed: {str(e)}", "Error")
+        except ConnectivityException as e:
+            self.append_to_log(f"TF connectivity error: {str(e)}", "Error")
+        except ExtrapolationException as e:
+            self.append_to_log(f"TF extrapolation error: {str(e)}", "Error")
+        except Exception as e:
+            self.append_to_log(f"Error getting TF data: {str(e)}", "Error")
+
+    def update_tf_display2(self, data):
+        # Store the data for difference calculation
+        self.test2_data = data
+        
+        # Format the transform data
+        t = data['translation']
+        r = data['rotation']
+        d = data['distance']
+        
+        # Create the display text
+        display_text = f"X: {t[0]:.2f}m "+ ' '
+        display_text += f"Y: {t[1]:.2f}m "+ ' '
+        display_text += f"Z: {t[2]:.2f}m "+ ' '
+        display_text += f"Distance: {d:.2f}m\n"
+        display_text += f"Yaw: {r[2]:.2f}° "+ ' '
+        display_text += f"Pitch: {r[1]:.2f}° "+ ' '
+        display_text += f"Roll: {r[0]:.2f}° "
+        
+        # Update the text browser
+        self.ui.textBrowser_test2.setText(display_text)
+        self.append_to_log("TF data updated for test2", "System")
+
+    def calculate_difference(self):
+        if self.test1_data is None or self.test2_data is None:
+            self.append_to_log("Error: Need both test1 and test2 data to calculate difference", "System")
+            return
+        
+        # Calculate differences
+        t1 = self.test1_data['translation']
+        t2 = self.test2_data['translation']
+        r1 = self.test1_data['rotation']
+        r2 = self.test2_data['rotation']
+        d1 = self.test1_data['distance']
+        d2 = self.test2_data['distance']
+        
+        # Calculate translation differences
+        dx = t2[0] - t1[0]
+        dy = t2[1] - t1[1]
+        dz = t2[2] - t1[2]
+        dd = math.sqrt(
+            dx**2 + 
+            dy**2 + 
+            dz**2
+        )
+        
+        # Calculate rotation differences
+        dr = r2[0] - r1[0]  # Roll difference
+        dp = r2[1] - r1[1]  # Pitch difference
+        dyaw = r2[2] - r1[2]  # Yaw difference
+        
+        # Create the display text
+        """display_text = f"X: {dx:.2f}m " + ' '
+        display_text += f"Y: {dy:.2f}m "+ ' '
+        display_text += f"Z: {dz:.2f}m "+ ' '
+        display_text += f"Distance: {dd:.2f}m\n"
+        display_text += f"Yaw: {dy:.2f}° "+ ' '
+        display_text += f"Pitch: {dp:.2f}° "+ ' '
+        display_text += f"Roll: {dr:.2f}° """
+        display_text = f"X: {dx:.2f}m " + '     '
+        display_text += f"Yaw: {dyaw:.2f}°\n "
+        display_text += f"Y: {dy:.2f}m "+ '     '
+        display_text += f"Pitch: {dp:.2f}°\n"
+        display_text += f"Z: {dz:.2f}m "+ '     '
+        display_text += f"Roll: {dr:.2f}°\n"
+        display_text += f"Distance: {dd:.2f}m"
+        
+        
+        # Update the text browser
+        self.ui.textBrowser_test_result.setText(display_text)
+        self.append_to_log("Difference calculated", "System")
+
+    def clear_test1(self):
+        self.ui.textBrowser_test1.clear()
+        self.test1_data = None
+        self.append_to_log("Test1 data cleared", "System")
+
+    def clear_test2(self):
+        self.ui.textBrowser_test2.clear()
+        self.test2_data = None
+        self.append_to_log("Test2 data cleared", "System")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

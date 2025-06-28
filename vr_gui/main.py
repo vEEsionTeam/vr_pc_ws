@@ -733,7 +733,7 @@ class MainWindow(QMainWindow):
 
     def on_server_stopped(self):
         self.ui.pb_run_server.setEnabled(True)
-        self.ui.pb_stop_server.setEnabled(False)
+        #self.ui.pb_stop_server.setEnabled(False)
         self.append_to_log("Server stopped", "System")
         self.ui.textBrowser_3.setText("Closed")
 
@@ -797,8 +797,11 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "Error", "Please select a world from the dropdown")
             return
         
+        # Append .world extension to the selected world name
+        world_file = f"{selected_world}.world"
+        
         # Create and start new Gazebo process with selected world
-        command = f"./pc_scripts/gazebo.sh"
+        command = f"./pc_scripts/gazebo.sh --world {world_file}"
         self.gazebo_process = LocalProcessWorker(command)
         self.gazebo_process.output.connect(lambda msg: self.append_to_log(msg, "Gazebo"))
         self.gazebo_process.error.connect(lambda msg: self.append_to_log(f"Error: {msg}", "Gazebo"))
@@ -807,7 +810,7 @@ class MainWindow(QMainWindow):
         self.gazebo_process.finished.connect(self.on_gazebo_finished)
         
         self.gazebo_process.start()
-        self.append_to_log(f"Starting Gazebo with world: {selected_world}", "System")
+        self.append_to_log(f"Starting Gazebo with world: {world_file}", "System")
 
     def stop_gazebo(self):
         if self.gazebo_process:

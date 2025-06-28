@@ -126,7 +126,6 @@ class Ui_MainWindow(object):
         self.comboBox_worlds = QComboBox(self.frame_2)
         self.comboBox_worlds.addItem("")
         self.comboBox_worlds.addItem("")
-        self.comboBox_worlds.addItem("")
         self.comboBox_worlds.setObjectName(u"comboBox_worlds")
         self.comboBox_worlds.setGeometry(QRect(90, 190, 101, 20))
         self.label_worlds = QLabel(self.frame_2)
